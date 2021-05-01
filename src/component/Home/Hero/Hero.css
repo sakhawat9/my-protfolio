@@ -1,0 +1,9 @@
+.button-style{
+    background-color: gray;
+    border: 1px solid gray;
+}
+.button-style:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: black;
+}
