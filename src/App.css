@@ -1,10 +1,10 @@
-
 *{
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 .btn-brand{
   background-color: #2053C9;
-  border: 5px solid #fff;
+  border: 2px solid #2053c9;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;

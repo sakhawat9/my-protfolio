@@ -6,4 +6,10 @@
     color: #fff;
     border: 1px solid #fff;
     background-color: black;
+    
+}
+.button-style a{
+    color: #fff;
+    text-decoration: none;
+    
 }

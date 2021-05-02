@@ -1,5 +1,5 @@
 import React from 'react';
-import Article from '../Article/Article';
+import Contact from '../Contact/Contact';
 import Hero from '../Hero/Hero';
 import Main from '../Main/Main';
 import './Home.css'
@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Hero />
             <Main />
-            <Article />
+            <Contact />
         </div>
     );
 };
