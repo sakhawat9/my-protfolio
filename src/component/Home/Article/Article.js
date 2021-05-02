@@ -9,7 +9,7 @@ const Article = () => {
         history.push('/project')
     }
     return (
-        <div>
+        <>
             <Container>
                 <div className="row py-5">
                     <div className="pr-5">
@@ -20,7 +20,7 @@ const Article = () => {
                     </div>
                 </div>
             </Container>
-        </div>
+        </>
     );
 };
 

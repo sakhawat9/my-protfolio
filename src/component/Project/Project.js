@@ -17,16 +17,16 @@ const Project = () => {
     return (
         <div className="pb-5 my-5">
             <Container>
-                <div>
+                <>
                     <div className="row">
                         <div className="col-lg-4 col-md-6 mb-4">
-                            <div style={{background: '#172A45', height: '500px'}} className="p-3 img-animation text-justify shadow rounded">
+                            <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <figure>
-                                <img className="mb-2 rounded" style={{width: '100%'}} src={fast} alt=""/>
+                                    <img className="mb-2 rounded" style={{width: '100%'}} src={fast} alt=""/>
                                 </figure>
                                 <h3>Go Wash</h3>
                                 <p>A full-stack single-page web application where customers can book a service for washing their dresses by pay the fees. The website contains a separate dashboard for the admin and user.</p>
-                                <div className="row technology px-3">
+                                <div className="row technology px-3 pb-2">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
@@ -42,13 +42,13 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
-                            <div style={{background: '#172A45', height: '500px'}}  className="p-3 img-animation shadow rounded text-justify ">
+                            <div style={{background: '#172A45', height: '520px'}}  className="p-3 img-animation shadow rounded text-justify ">
                                 <figure>
                                     <img className="mb-2 rounded" style={{width: '100%'}} src={second} alt=""/>
                                 </figure>
                                 <h3>Fast Repair</h3>
                                 <p>A full-stack single-page web application where customers can book a service for repairing their smart phone by pay the fees. The website contains a separate dashboard for admin and user.</p>
-                                <div className="row technology px-3">
+                                <div className="row technology px-3 pb-2">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
@@ -64,11 +64,11 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
-                            <div style={{background: '#172A45', height: '500px'}} className="p-3 img-animation text-justify shadow rounded">
+                            <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <figure><img className="mb-2 rounded" style={{width: '100%'}} src={third} alt=""/></figure>
                                 <h3>Daily Mart</h3>
                                 <p>A full-stack single page web application where users can choose, explore and order food by submitting relevant information.</p>
-                                <div className="row technology px-3">
+                                <div className="row technology px-3 pb-2">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
@@ -83,11 +83,11 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
-                            <div style={{background: '#172A45', height: '500px'}} className="p-3 img-animation text-justify shadow rounded">
+                            <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <figure><img className="mb-2 rounded" style={{width: '100%'}} src={five} alt=""/></figure>
                                 <h3>Doctors Portal</h3>
                                 <p>A Single page web app with dashboard where people can pick the date and time and fix an appointment. A doctor can review his appointments and prescribe medicine to a Patient from his dashboard.</p>
-                                <div className="row technology px-3">
+                                <div className="row technology px-3 pb-2">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
@@ -102,11 +102,11 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
-                            <div style={{background: '#172A45', height: '500px'}} className="p-3 img-animation text-justify shadow rounded">
+                            <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <figure><img className="mb-2 rounded" style={{width: '100%'}} src={volunteerNetworks} alt=""/></figure>
                                 <h3>volunteer_networks</h3>
                                 <p>A Single page web app with dashboard where people can pick the date and time and fix an appointment. </p>
-                                <div className="row technology px-3">
+                                <div className="row technology px-3 pb-2">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
@@ -121,11 +121,11 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
-                            <div style={{background: '#172A45', height: '500px'}} className="p-3 img-animation text-justify shadow rounded">
+                            <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <figure><img className="mb-2 rounded" style={{width: '100%'}} src={forth} alt=""/></figure>
                                 <h3>Fast_Ride</h3>
                                 <p>A Single page web app with dashboard where people can pick the date and time and fix an appointment. </p>
-                                <div className="row technology px-3">
+                                <div className="row technology px-3 pb-2">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
@@ -140,11 +140,11 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
-                            <div style={{background: '#172A45', height: '500px'}} className="p-3 img-animation text-justify shadow rounded">
+                            <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <figure><img className="mb-2 rounded" style={{width: '100%'}} src={panda} alt=""/></figure>
                                 <h3>Panda Commerce</h3>
                                 <p>A simple, static, and one-page e-commerce website design. It is an XD to HTML conversion .</p>
-                                <div className="row technology px-3">
+                                <div className="row technology px-3 pb-2">
                                     <span>HTML5</span>
                                     <span>CSS</span>
                                     <span>Bootstrap</span>
@@ -156,7 +156,7 @@ const Project = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </>
             </Container>
         </div>
     );
