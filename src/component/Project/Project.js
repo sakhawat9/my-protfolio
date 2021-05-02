@@ -106,7 +106,7 @@ const Project = () => {
                             <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <figure><img className="mb-2 rounded" style={{width: '100%'}} src={volunteerNetworks} alt=""/></figure>
                                 <h3>volunteer_networks</h3>
-                                <p>A single-page web app with dashboard where people can pick the date and time and fix an appointment. </p>
+                                <p>A single-page web app. Admin can add any event and he can see all events. Users can register for an event and see all registered event details. with a dashboard where people can pick the date and time and fix an appointment. </p>
                                 <div className="row technology px-3 pb-2">
                                     <span>React.js</span>
                                     <span>Node.js</span>
