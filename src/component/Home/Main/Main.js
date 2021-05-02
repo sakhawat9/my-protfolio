@@ -29,7 +29,7 @@ const Main = () => {
                                 </figure>
                                 <h3>Go Wash</h3>
                                 <p>A full-stack single-page web application where customers can book a service for washing their dresses by pay the fees. The website contains a separate dashboard for the admin and user</p>
-                                <div className="row technology">
+                                <div className="row technology px-3">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
@@ -50,7 +50,7 @@ const Main = () => {
                                 </figure>
                                 <h3>Fast Repair</h3>
                                 <p>A full-stack single-page web application where customers can book a service for repairing their smart phone by pay the fees. The website contains a separate dashboard for admin and user</p>
-                                <div className="row technology">
+                                <div className="row technology px-3">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
@@ -70,7 +70,7 @@ const Main = () => {
                                 </figure>
                                 <h3>Daily Mart</h3>
                                 <p>A full-stack single page web application where users can choose, explore and order food by submitting relevant information.</p>
-                                <div className="row technology">
+                                <div className="row technology px-3">
                                     <span>React.js</span>
                                     <span>Node.js</span>
                                     <span>Express.js</span>
