@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <div>
       <Container>
-        <p style={{width: '700px'}} className="text-justify container">
+        <p style={{ maxWidth: '700px'}} className="text-justify container">
           <span><h5 className="py-4">My 1st 100 days of programming life.</h5></span>
           I was starting to follow w3school
           from the beginning. Spent the first second weeks in HTML. Was trying
