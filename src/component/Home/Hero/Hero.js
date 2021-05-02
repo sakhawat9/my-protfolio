@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
 import image from '../../../images/my picture 1.png'
+import TypeWriterEffect from 'react-typewriter-effect';
 import './Hero.css'
 
 const Hero = () => {
@@ -18,8 +19,42 @@ const Hero = () => {
                     <div>
                         <p>Hello, I'm</p>
                         <h1>Sakhawat Hossain</h1>
-                        <p>Full-stack Web Developer</p>
-                        <p className="text-justify">A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>
+                        <TypeWriterEffect
+                        textStyle={{
+                        fontFamily: 'Roboto',
+                        color: '#fff',
+                        fontWeight: 500,
+                        fontSize: '1.5em',
+                        }}
+                        startDelay={2000}
+                        cursorColor="#fff"
+                        multiText={[
+                        'Full-stack Web Developer',
+                        'Web Developer',
+                        'Front end developer',
+                        'Full-stack Web Developer',
+                        ]}
+                        multiTextDelay={1000}
+                        typeSpeed={200}
+                    />
+                        <TypeWriterEffect
+                        textStyle={{
+                        fontFamily: 'Roboto',
+                        color: '#fff',
+                        fontWeight: 500,
+                        fontSize: '1.5em',
+                        }}
+                        startDelay={2000}
+                        cursorColor="#fff"
+                        multiText={[
+                        'A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.',
+                        
+                        ]}
+                        multiTextDelay={1000}
+                        typeSpeed={50}
+                    />
+                        <p></p>
+                        {/* <p className="text-justify">A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p> */}
                         <button onClick={handleClick} as={Link} to="/about" className="btn-brand mr-3">About Me</button>
                         <button className="button-style btn-brand"><a href="https://drive.google.com/uc?export=download&id=16pfdkeTdG4VZh5VLwULO18M09kT35LBY">Download Resume</a></button>
                     </div>
