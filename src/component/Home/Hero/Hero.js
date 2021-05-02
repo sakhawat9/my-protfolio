@@ -34,27 +34,12 @@ const Hero = () => {
                         'Front end developer',
                         'Full-stack Web Developer',
                         ]}
+                        loop={true}
                         multiTextDelay={1000}
-                        typeSpeed={200}
+                        typeSpeed={150}
                     />
-                        <TypeWriterEffect
-                        textStyle={{
-                        fontFamily: 'Roboto',
-                        color: '#fff',
-                        fontWeight: 500,
-                        fontSize: '1.5em',
-                        }}
-                        startDelay={2000}
-                        cursorColor="#fff"
-                        multiText={[
-                        'A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.',
                         
-                        ]}
-                        multiTextDelay={1000}
-                        typeSpeed={50}
-                    />
-                        <p></p>
-                        {/* <p className="text-justify">A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p> */}
+                        <p className="text-justify my-3">A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>
                         <button onClick={handleClick} as={Link} to="/about" className="btn-brand mr-3">About Me</button>
                         <button className="button-style btn-brand"><a href="https://drive.google.com/uc?export=download&id=16pfdkeTdG4VZh5VLwULO18M09kT35LBY">Download Resume</a></button>
                     </div>
