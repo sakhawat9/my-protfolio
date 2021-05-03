@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
-import fast from '../../../images/fast_website.png';
-import second from '../../../images/second_website.png';
-import third from '../../../images/thaird_website.png';
+import laundry01 from '../../../images/laundry01.png'
+import laundry02 from '../../../images/laundry02.png'
+import laundry03 from '../../../images/laundry03.png'
+import fast_repair01 from '../../../images/fast_repair01.png'
+import fast_repair02 from '../../../images/fast_repair02.png'
+import fast_repair03 from '../../../images/fast_repair03.png'
+import daily_mart01 from '../../../images/daily_mart01.png'
+import daily_mart02 from '../../../images/daily_mart02.png'
+import daily_mart03 from '../../../images/daily_mart03.png'
 import { useHistory } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import './Main.css'
+import Carousel from 'react-bootstrap/Carousel'
 
 
 const Main = () => {
@@ -16,6 +23,12 @@ const Main = () => {
         console.log('click');
         history.push('/project')
     }
+
+        const [index, setIndex] = useState(0);
+      
+        const handleSelect = (selectedIndex, e) => {
+          setIndex(selectedIndex);
+        };
     return (
         <div className="pb-5 my-5">
             <Container>
@@ -23,10 +36,18 @@ const Main = () => {
                 <h2 className="pb-3">Some of my work</h2>
                     <div className="row">
                         <div className="col-lg-4 col-md-6">
-                            <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
-                                <figure>
-                                    <img className="mb-2 rounded" style={{width: '100%'}} src={fast} alt=""/>
-                                </figure>
+                            <div style={{background: '#172A45', height: '530px'}} className="p-3 img-animation text-justify shadow rounded">
+                                <Carousel activeIndex={index} onSelect={handleSelect}>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={laundry01} alt="First slide" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={laundry02} alt="Second slide"/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100"src={laundry03} alt="Third slide" />
+                                    </Carousel.Item>
+                                </Carousel>
                                 <h3>Go Wash</h3>
                                 <p>A full-stack single-page web application where customers can book a service for washing their dresses by pay the fees. The website contains a separate dashboard for the admin and user</p>
                                 <div className="row technology px-3 pb-2">
@@ -44,10 +65,18 @@ const Main = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
-                            <div style={{background: '#172A45', height: '520px'}}  className="p-3 img-animation shadow rounded text-justify ">
-                                <figure>
-                                    <img className="mb-2 rounded" style={{width: '100%'}} src={second} alt=""/>
-                                </figure>
+                            <div style={{background: '#172A45', height: '530px'}}  className="p-3 img-animation shadow rounded text-justify ">
+                                <Carousel activeIndex={index} onSelect={handleSelect}>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={fast_repair01} alt="First slide" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={fast_repair02} alt="Second slide"/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100"src={fast_repair03} alt="Third slide" />
+                                    </Carousel.Item>
+                                </Carousel>
                                 <h3>Fast Repair</h3>
                                 <p>A full-stack single-page web application where customers can book a service for repairing their smart phone by pay the fees. The website contains a separate dashboard for admin and user</p>
                                 <div className="row technology px-3 pb-2">
@@ -64,10 +93,18 @@ const Main = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
-                            <div style={{background: '#172A45', height: '520px'}} className="p-3 img-animation text-justify shadow rounded">
-                                <figure>
-                                    <img className="mb-2 rounded" style={{width: '100%'}} src={third} alt=""/>
-                                </figure>
+                            <div style={{background: '#172A45', height: '530px'}} className="p-3 img-animation text-justify shadow rounded">
+                                <Carousel activeIndex={index} onSelect={handleSelect}>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={daily_mart01} alt="First slide" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={daily_mart02} alt="Second slide"/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100"src={daily_mart03} alt="Third slide" />
+                                    </Carousel.Item>
+                                </Carousel>
                                 <h3>Daily Mart</h3>
                                 <p>A full-stack single page web application where users can choose, explore and order food by submitting relevant information.</p>
                                 <div className="row technology px-3 pb-2">
