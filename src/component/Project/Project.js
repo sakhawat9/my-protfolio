@@ -19,7 +19,9 @@ import fast_ride03 from '../../images/fast_ride03.png'
 import panda01 from '../../images/panda01.png'
 import panda02 from '../../images/panda02.png'
 import panda03 from '../../images/panda03.png'
-import football from '../../images/Football.png'
+import football01 from '../../images/football01.png'
+import football02 from '../../images/football02.png'
+import football03 from '../../images/football03.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -143,7 +145,7 @@ const Project = () => {
                                     <span>Firebase</span>
                                     <span>React bootstrap</span>
                                 </div>
-                                <a style={{fontSize: "30px", paddingRight: "20px"}} target="_blank" href="https://github.com/SakhawatHossain55/doctors-portal-practice-client"><FontAwesomeIcon icon={faGithub} /></a>
+                                <a style={{fontSize: "30px", paddingRight: "20px"}} target="_blank" href="https://github.com/SakhawatHossain55/doctors-portal-main"><FontAwesomeIcon icon={faGithub} /></a>
                                 <a style={{fontSize: "30px"}} target="_blank" href="https://doctors-portal-ac941.web.app"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                             </div>
                         </div>
@@ -233,7 +235,17 @@ const Project = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div style={{background: '#172A45', height: '530px'}} className="p-3 img-animation text-justify shadow rounded">
-                                <figure><img className="mb-2 rounded" style={{width: '100%'}} src={football} alt=""/></figure>
+                            <Carousel activeIndex={index} onSelect={handleSelect}>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={football01} alt="First slide" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={football02} alt="Second slide"/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100"src={football03} alt="Third slide" />
+                                    </Carousel.Item>
+                                </Carousel>
                                 <h3>Football Facts</h3>
                                 <p>Football Facts is a professional react web app what I made for programming hero's assignment #8. The project is totally simple and made using latest version functionality.</p>
                                 <div className="row technology px-3 pb-2">
