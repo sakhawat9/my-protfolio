@@ -11,11 +11,11 @@ const About = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="p-5 text-justify">
-                            <img style={{width : '350px'}} className="pb-5" src={image} alt=""/>
+                            <img style={{maxWidth : '350px'}} className="pb-5" src={image} alt=""/>
                             <h1>I'm Sakhawat Hossain</h1>
                             <p>A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>
-                            <button className="btn-github btn-brand"><a target="_blank" href="https://github.com/SakhawatHossain55">Github</a></button>
-                            <button className="btn-linkedIn btn-brand"><a target="_blank" href="https://www.linkedin.com/in/sakhawat-hossain-95a57b203">LinkedIn</a></button>
+                            <button className="btn-github btn-brand mb-4"><a target="_blank" href="https://github.com/SakhawatHossain55">Github</a></button>
+                            <button className="btn-linkedIn btn-brand mb-4"><a target="_blank" href="https://www.linkedin.com/in/sakhawat-hossain-95a57b203">LinkedIn</a></button>
                         </div>
                     </div>
                     <div className="col-md-6 p-5">

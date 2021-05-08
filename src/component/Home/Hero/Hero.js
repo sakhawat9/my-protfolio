@@ -45,7 +45,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="col-md-6 p-5">
-                    <img style={{width : '350px', float: 'right'}} src={image} alt=""/>
+                    <img style={{maxWidth : '350px', float: 'right'}} src={image} alt=""/>
                 </div>
             </div>
             </Container>
