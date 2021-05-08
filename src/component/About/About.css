@@ -11,16 +11,20 @@
 
 .btn-github{
     background-color: #0A192F;
-    text-decoration: none;
     margin-right: 20px;
 }
 .btn-github:hover{
     background-color: aqua;
-    text-decoration: none;
 }
 
 .btn-linkedIn{
     color: blue;
     background-color: aqua;
     border: 2px solid aqua;
+}
+.btn-github a{
+    text-decoration: none;
+}
+.btn-linkedIn a{
+    text-decoration: none;
 }

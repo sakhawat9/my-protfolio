@@ -16,7 +16,7 @@ const Header = () => {
             <Nav.Link as={Link} style={{color: '#fff'}} to="/project"> Project </Nav.Link>
             <Nav.Link as={Link} style={{color: '#fff'}} to="/blog"> Blog </Nav.Link>
             <Nav.Link as={Link} style={{color: '#fff'}} to="/contact"> Contact </Nav.Link>
-            <Nav.Link style={{color: '#fff'}} target="_blank" download href="https://drive.google.com/file/d/16pfdkeTdG4VZh5VLwULO18M09kT35LBY/view" className="active btn-brand p-1 px-4" >Resume </Nav.Link>
+            <Nav.Link style={{color: '#fff'}} target="_blank" download href="https://drive.google.com/file/d/16pfdkeTdG4VZh5VLwULO18M09kT35LBY/view" className="active btn-brand p-0 px-2" >Resume </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

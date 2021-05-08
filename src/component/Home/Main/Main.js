@@ -35,7 +35,7 @@ const Main = () => {
                 <div>
                 <h2 className="pb-3">Some of my work</h2>
                     <div className="row">
-                        <div className="col-lg-4 col-md-6">
+                        <div className="col-lg-4 col-md-6 pb-4">
                             <div style={{background: '#172A45', height: '530px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <Carousel activeIndex={index} onSelect={handleSelect}>
                                     <Carousel.Item>
@@ -64,7 +64,7 @@ const Main = () => {
                                <a style={{fontSize: "30px"}} target="_blank" href="https://laundry-service-48e19.web.app"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6">
+                        <div className="col-lg-4 col-md-6 pb-4">
                             <div style={{background: '#172A45', height: '530px'}}  className="p-3 img-animation shadow rounded text-justify ">
                                 <Carousel activeIndex={index} onSelect={handleSelect}>
                                     <Carousel.Item>
@@ -92,7 +92,7 @@ const Main = () => {
                                 <a style={{fontSize: "30px"}} target="_blank" href="https://fast-repair-c13c2.web.app"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6">
+                        <div className="col-lg-4 col-md-6 pb-4">
                             <div style={{background: '#172A45', height: '530px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <Carousel activeIndex={index} onSelect={handleSelect}>
                                     <Carousel.Item>

@@ -9,7 +9,9 @@ import fast_repair03 from '../../images/fast_repair03.png'
 import daily_mart01 from '../../images/daily_mart01.png'
 import daily_mart02 from '../../images/daily_mart02.png'
 import daily_mart03 from '../../images/daily_mart03.png'
-import five from '../../images/five_website.png';
+import doctors_portal01 from '../../images/doctors_portal01.png'
+import doctors_portal02 from '../../images/doctors_portal02.png'
+import doctors_portal03 from '../../images/doctors_portal03.png'
 import volunteer01 from '../../images/volunteer01.png'
 import volunteer02 from '../../images/volunteer02.png'
 import volunteer03 from '../../images/volunteer03.png'
@@ -132,7 +134,17 @@ const Project = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div style={{background: '#172A45', height: '530px'}} className="p-3 img-animation text-justify shadow rounded">
-                                <figure><img className="mb-2 rounded" style={{width: '100%'}} src={five} alt=""/></figure>
+                                <Carousel activeIndex={index} onSelect={handleSelect}>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={doctors_portal01} alt="First slide" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={doctors_portal02} alt="Second slide"/>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img style={{height: '150px'}} className="d-block w-100"src={doctors_portal03} alt="Third slide" />
+                                    </Carousel.Item>
+                                </Carousel>
                                 <h3>Doctors Portal</h3>
                                 <p>A single-page web app with a dashboard where people can pick the date and time and fix an appointment. A doctor can review his appointments and prescribe medicine to a Patient from his dashboard.</p>
                                 <div className="row technology px-3 pb-2">
