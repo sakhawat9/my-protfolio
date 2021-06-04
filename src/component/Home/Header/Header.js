@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import logo from "../../../images/sh__shakib.png"
 
 const Header = () => {
   return (
     <Navbar className="pb-5" bg="transparent" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} style={{ fontSize: "30px", color: "white" }} className="web-name header-logo" to="/" > Shakib </Navbar.Brand>
+        <Navbar.Brand as={Link} className="web-name header-logo" to="/" ><img style={{ height: '70px' }} src={logo} alt="" /> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
