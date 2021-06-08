@@ -3,9 +3,9 @@ import { Container } from 'react-bootstrap';
 import laundry01 from '../../../images/laundry01.png'
 import laundry02 from '../../../images/laundry02.png'
 import laundry03 from '../../../images/laundry03.png'
-import fast_repair01 from '../../../images/fast_repair01.png'
-import fast_repair02 from '../../../images/fast_repair02.png'
-import fast_repair03 from '../../../images/fast_repair03.png'
+import chart_app01 from '../../../images/Capture.PNG'
+import chart_app02 from '../../../images/Capture-1.PNG'
+import chart_app03 from '../../../images/Capture-2.PNG'
 import daily_mart01 from '../../../images/daily_mart01.png'
 import daily_mart02 from '../../../images/daily_mart02.png'
 import daily_mart03 from '../../../images/daily_mart03.png'
@@ -64,32 +64,33 @@ const Main = () => {
                                <a style={{fontSize: "30px"}} target="_blank" href="https://laundry-service-48e19.web.app"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 pb-4">
-                            <div style={{background: '#172A45', height: '530px'}}  className="p-3 img-animation shadow rounded text-justify ">
+                        <div className="col-lg-4 col-md-6 mb-4">
+                            <div style={{background: '#172A45', height: '530px'}} className="p-3 img-animation text-justify shadow rounded">
                                 <Carousel activeIndex={index} onSelect={handleSelect}>
                                     <Carousel.Item>
-                                        <img style={{height: '150px'}} className="d-block w-100" src={fast_repair01} alt="First slide" />
+                                        <img style={{height: '150px'}} className="d-block w-100" src={chart_app01} alt="First slide" />
                                     </Carousel.Item>
                                     <Carousel.Item>
-                                        <img style={{height: '150px'}} className="d-block w-100" src={fast_repair02} alt="Second slide"/>
+                                        <img style={{height: '150px'}} className="d-block w-100" src={chart_app02} alt="Second slide"/>
                                     </Carousel.Item>
                                     <Carousel.Item>
-                                        <img style={{height: '150px'}} className="d-block w-100"src={fast_repair03} alt="Third slide" />
+                                        <img style={{height: '150px'}} className="d-block w-100"src={chart_app03} alt="Third slide" />
                                     </Carousel.Item>
                                 </Carousel>
-                                <h3>Fast Repair</h3>
-                                <p>A full-stack single-page web application where customers can book a service for repairing their smart phone by pay the fees. The website contains a separate dashboard for admin and user</p>
+                                <h3>Chart App</h3>
+                                <p>This is a Communicating website where a person can contact him/her friend & customer community. If a person wants to use this website, he/she must first sign in to the Google Authentication process. They can create Room and contact easily.</p>
                                 <div className="row technology px-3 pb-2">
-                                    <span>React.js</span>
-                                    <span>Node.js</span>
-                                    <span>Express.js</span>
-                                    <span>MOngoDB</span>
-                                    <span>FontAwesome</span>
+                                    <span>React Redux</span>
+                                    <span>Redux Toolkit</span>
+                                    <span>Style Component</span>
+                                    <span>Material-ui</span>
                                     <span>Firebase</span>
-                                    <span>React bootstrap</span>
+                                    <span>React Firebase Hook</span>
                                 </div>
-                                <a style={{fontSize: "30px", paddingRight: "20px"}} target="_blank" href="https://github.com/SakhawatHossain55/fast-repair"><FontAwesomeIcon icon={faGithub} /></a>
-                                <a style={{fontSize: "30px"}} target="_blank" href="https://fast-repair-c13c2.web.app"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                                <div className="">
+                                <a style={{fontSize: "30px", paddingRight: "20px"}} target="_blank" href="https://github.com/SakhawatHossain55/chat-app"><FontAwesomeIcon icon={faGithub} /></a>
+                                <a style={{fontSize: "30px"}} target="_blank" href="https://chat-app-team-78.web.app"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                                </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 pb-4">
