@@ -15,7 +15,7 @@ import Blog from './component/Blog/Blog';
 
 function App() {
   return (
-    <div>
+    <>
       <Router>
         <Header />
         <Switch>
@@ -37,7 +37,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </div>
+    </>
   );
 }
 

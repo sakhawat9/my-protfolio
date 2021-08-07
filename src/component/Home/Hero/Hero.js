@@ -12,7 +12,7 @@ const Hero = () => {
         history.push('/about')
     }
     return (
-        <div>
+        <>
             <Container>
             <div className="row pb-5">
                 <div className="col-md-6 d-flex align-items-center">
@@ -49,7 +49,7 @@ const Hero = () => {
                 </div>
             </div>
             </Container>
-        </div>
+        </>
     );
 };
 

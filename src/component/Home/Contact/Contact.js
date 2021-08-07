@@ -8,7 +8,8 @@ const Contact = () => {
 
     }
     return (
-        <div style={{maxWidth: '600px', background: '#172A45'}} className="container text-center mb-5 p-5 rounded">
+        <section>
+            <div style={{maxWidth: '600px', background: '#172A45'}} className="container text-center mb-5 p-5 rounded">
             <h1>Get In Touch</h1>
             <p className="py-2">I'd love to hear from you. Whether you have a question or just want to say hi, feel free to drop a message. I'll try my best to get </p>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -21,6 +22,7 @@ const Contact = () => {
                 <input className="form-control" style={{background: '#2053C9', color: '#fff'}} type="submit" value="sent"/>
             </form>
         </div>
+        </section>
     );
 };
 

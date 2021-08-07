@@ -34,10 +34,10 @@ const Main = () => {
         <div>
           <h2 className="pb-3">Some of my work</h2>
           <div className="row">
-            <div className="col-lg-4 col-md-6 pb-4">
+            <div className="pb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -71,7 +71,7 @@ const Main = () => {
                   book a service for washing their dresses by pay the fees. The
                   website contains a separate dashboard for the admin and user
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -82,7 +82,7 @@ const Main = () => {
                   <span>Bootstrap</span>
                 </div>
                 <a
-                  style={{ fontSize: "30px", paddingRight: "20px" }}
+                  style={{ fontSize: "30px", marginTop: "auto", marginBottom: "0", paddingRight: "20px" }}
                   target="_blank" rel="noreferrer"
                   href="https://github.com/SakhawatHossain55/GoWash"
                 >
@@ -97,10 +97,10 @@ const Main = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -136,7 +136,7 @@ const Main = () => {
                   Authentication process. They can create Room and contact
                   easily.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React Redux</span>
                   <span>Redux Toolkit</span>
                   <span>Style Component</span>
@@ -145,8 +145,8 @@ const Main = () => {
                   <span>React Firebase Hook</span>
                 </div>
                 <div className="">
-                  <a
-                    style={{ fontSize: "30px", paddingRight: "20px" }}
+                  <a className="mt-auto mb-0"
+                    style={{ fontSize: "30px", marginTop: "auto", marginBottom: "0", paddingRight: "20px" }}
                     target="_blank" rel="noreferrer"
                     href="https://github.com/SakhawatHossain55/chat-app"
                   >
@@ -162,10 +162,10 @@ const Main = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 pb-4">
+            <div className="pb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -199,7 +199,7 @@ const Main = () => {
                   choose, explore and order food by submitting relevant
                   information.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -226,7 +226,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <button onClick={handleClick} className="btn-brand mt-3">
+          <button onClick={handleClick} className="mt-3 btn-brand">
             All Project
           </button>
         </div>
