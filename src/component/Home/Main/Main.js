@@ -6,9 +6,9 @@ import laundry03 from "../../../images/laundry03.png";
 import chart_app01 from "../../../images/Capture.PNG";
 import chart_app02 from "../../../images/Capture-1.PNG";
 import chart_app03 from "../../../images/Capture-2.PNG";
-import daily_mart01 from "../../../images/daily_mart01.png";
-import daily_mart02 from "../../../images/daily_mart02.png";
-import daily_mart03 from "../../../images/daily_mart03.png";
+import fashion from "../../../images/Screenshot_23.png";
+import fashion2 from "../../../images/Screenshot_24.png";
+import fashion3 from "../../../images/Screenshot_25.png";
 import { useHistory } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -82,15 +82,22 @@ const Main = () => {
                   <span>Bootstrap</span>
                 </div>
                 <a
-                  style={{ fontSize: "30px", marginTop: "auto", marginBottom: "0", paddingRight: "20px" }}
-                  target="_blank" rel="noreferrer"
+                  style={{
+                    fontSize: "30px",
+                    marginTop: "auto",
+                    marginBottom: "0",
+                    paddingRight: "20px",
+                  }}
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/SakhawatHossain55/GoWash"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   style={{ fontSize: "30px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://laundry-service-48e19.web.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -145,16 +152,24 @@ const Main = () => {
                   <span>React Firebase Hook</span>
                 </div>
                 <div className="">
-                  <a className="mt-auto mb-0"
-                    style={{ fontSize: "30px", marginTop: "auto", marginBottom: "0", paddingRight: "20px" }}
-                    target="_blank" rel="noreferrer"
+                  <a
+                    className="mt-auto mb-0"
+                    style={{
+                      fontSize: "30px",
+                      marginTop: "auto",
+                      marginBottom: "0",
+                      paddingRight: "20px",
+                    }}
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/SakhawatHossain55/chat-app"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
                     style={{ fontSize: "30px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://chat-app-team-78.web.app"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -172,7 +187,7 @@ const Main = () => {
                     <img
                       style={{ height: "150px" }}
                       className="d-block w-100"
-                      src={daily_mart01}
+                      src={fashion}
                       alt="First slide"
                     />
                   </Carousel.Item>
@@ -180,7 +195,7 @@ const Main = () => {
                     <img
                       style={{ height: "150px" }}
                       className="d-block w-100"
-                      src={daily_mart02}
+                      src={fashion2}
                       alt="Second slide"
                     />
                   </Carousel.Item>
@@ -188,38 +203,41 @@ const Main = () => {
                     <img
                       style={{ height: "150px" }}
                       className="d-block w-100"
-                      src={daily_mart03}
+                      src={fashion3}
                       alt="Third slide"
                     />
                   </Carousel.Item>
                 </Carousel>
-                <h3>Daily Mart</h3>
+                <h3>Fashion Collection</h3>
                 <p>
-                  A full-stack single page web application where users can
-                  choose, explore and order food by submitting relevant
-                  information.
+                  A full-stack single-page web application where users can
+                  choose and explore product details. Users can select items and
+                  can add them to the cart section. Finally can order them from
+                  the checkout section.
                 </p>
                 <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
-                  <span>Node.js</span>
-                  <span>Express.js</span>
-                  <span>MOngoDB</span>
-                  <span>Stripe.js</span>
-                  <span>FontAwesome</span>
-                  <span>Firebase</span>
+                  <span>React-redux</span>
+                  <span>Typescript</span>
+                  <span>React icon</span>
                   <span>React bootstrap</span>
+                  <span>sass</span>
+                  <span>eslint</span>
+                  <span>vercel</span>
                 </div>
                 <a
                   style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank" rel="noreferrer"
-                  href="https://github.com/SakhawatHossain55/Daily-Mart"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/SakhawatHossain55/ecommerce_store"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   style={{ fontSize: "30px" }}
-                  target="_blank" rel="noreferrer"
-                  href="https://fresh-valley-e1a56.web.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://ecommercestore-alpha.vercel.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </a>

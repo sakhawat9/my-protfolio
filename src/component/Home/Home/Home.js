@@ -11,7 +11,8 @@ const Home = (Component) => {
             <Hero />
             <Main />
             <Contact />
-            <ParticlesBg type="cobweb" bg={true} />        </div>
+            <ParticlesBg type="cobweb" bg={true} />       
+        </div>
     );
 };
 

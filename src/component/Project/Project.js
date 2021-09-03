@@ -3,6 +3,9 @@ import { Container } from "react-bootstrap";
 import laundry01 from "../../images/laundry01.png";
 import laundry02 from "../../images/laundry02.png";
 import laundry03 from "../../images/laundry03.png";
+import fashion from "../../images/Screenshot_23.png";
+import fashion2 from "../../images/Screenshot_24.png";
+import fashion3 from "../../images/Screenshot_25.png";
 import fast_repair01 from "../../images/fast_repair01.png";
 import fast_repair02 from "../../images/fast_repair02.png";
 import fast_repair03 from "../../images/fast_repair03.png";
@@ -111,6 +114,67 @@ const Project = () => {
                   style={{ fontSize: "30px" }}
                   target="_blank" rel="noreferrer"
                   href="https://laundry-service-48e19.web.app"
+                >
+                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div
+                style={{ background: "#172A45", height: "530px" }}
+                className="p-3 img-animation text-justify shadow rounded"
+              >
+                <Carousel activeIndex={index} onSelect={handleSelect}>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fashion}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fashion2}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fashion3}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+                <h3>Fashion Collection</h3>
+                <p>A full-stack single-page web application where users can choose and explore product details. Users can select items and can add them to the cart section. Finally can order them from the checkout section.</p>
+                <div className="px-3 pb-2 row technology">
+                  <span>React.js</span>
+                  <span>React-redux</span>
+                  <span>Typescript</span>
+                  <span>React icon</span>
+                  <span>React bootstrap</span>
+                  <span>sass</span>
+                  <span>eslint</span>
+                  <span>vercel</span>
+                </div>
+                <a
+                  style={{ fontSize: "30px", paddingRight: "20px" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/SakhawatHossain55/ecommerce_store"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a
+                  style={{ fontSize: "30px" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://ecommercestore-alpha.vercel.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </a>
