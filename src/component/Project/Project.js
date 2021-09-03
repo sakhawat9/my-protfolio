@@ -33,6 +33,9 @@ import signal_app03 from "../../images/Capture-7.PNG";
 import movie_app01 from "../../images/Capture13.PNG";
 import movie_app02 from "../../images/Capture14.PNG";
 import movie_app03 from "../../images/Capture15.PNG";
+import portfolio from "../../images/Screenshot_7.png";
+import portfolio2 from "../../images/Screenshot_19.png";
+import portfolio3 from "../../images/Screenshot_21.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -160,7 +163,7 @@ const Project = () => {
                   <span>Firebase</span>
                   <span>React Firebase Hook</span>
                 </div>
-                <div className="">
+                <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
                     target="_blank" rel="noreferrer" 
@@ -444,6 +447,68 @@ const Project = () => {
                     <img
                       style={{ height: "150px" }}
                       className="d-block w-100"
+                      src={portfolio}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={portfolio2}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={portfolio3}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+                <h3>Portfolio Website</h3>
+                <p>A frontend single-page web application. Which is a developer portfolio application. All the function of the site works smoothly including contact form. This amazing - minimalistic - animated application is made using Next.js, Tailwind CSS, TypeScript (Heart for this ) & Framer Motion.</p>
+                <div className="row technology px-3 pb-2">
+                  <span>React</span>
+                  <span>Next.js</span>
+                  <span>Typescript</span>
+                  <span>Nodemailer</span>
+                  <span>React Toastify</span>
+                  <span>React Hook Form</span>
+                  <span>Tailwind CSS</span>
+                  <span>Framer Motion</span>
+                  <span>react-icons</span>
+                </div>
+                <div>
+                  <a
+                    style={{ fontSize: "30px", paddingRight: "20px" }}
+                    target="_blank" rel="noreferrer"
+                    href="https://github.com/SakhawatHossain55/sakhawat-hossain"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <a
+                    style={{ fontSize: "30px" }}
+                    target="_blank" rel="noreferrer"
+                    href="https://sakhawat-hossain.vercel.app"
+                  >
+                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div
+                style={{ background: "#172A45", height: "530px" }}
+                className="p-3 img-animation text-justify shadow rounded"
+              >
+                <Carousel activeIndex={index} onSelect={handleSelect}>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
                       src={fast_ride01}
                       alt="First slide"
                     />
@@ -529,7 +594,6 @@ const Project = () => {
                   </Carousel.Item>
                 </Carousel>
                 <h3>Signal App</h3>
-                {/* <p>A simple, static, and one-page e-commerce website design. It is an XD to HTML conversion.</p> */}
                 <div className="row technology px-3 pb-2">
                   <span>React</span>
                   <span>React-Native</span>
@@ -539,7 +603,7 @@ const Project = () => {
                   <span>HTML5</span>
                   <span>CSS</span>
                 </div>
-                <div className="">
+                <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
                     target="_blank" rel="noreferrer"
@@ -598,7 +662,7 @@ const Project = () => {
                   <span>CSS</span>
                   <span>Bootstrap</span>
                 </div>
-                <div className="">
+                <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
                     target="_blank" rel="noreferrer"
@@ -662,7 +726,7 @@ const Project = () => {
                   <span>Heroku</span>
                   <span>Bootstrap</span>
                 </div>
-                <div className="">
+                <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
                     target="_blank" rel="noreferrer"
@@ -712,7 +776,7 @@ const Project = () => {
                     />
                   </Carousel.Item>
                 </Carousel>
-                <h3>Football Facts</h3>
+                <h3>Movie Website</h3>
                 <p>Frontend movie website by using HTML, pure CSS, and Vanilla JavaScript.</p>
                 <div className="row technology px-3 pb-2">
                   <span>HTML</span>
@@ -720,7 +784,7 @@ const Project = () => {
                   <span>JavaScript</span>
                   <span>FontAwesome</span>
                 </div>
-                <div className="">
+                <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
                     target="_blank" rel="noreferrer"
@@ -738,6 +802,7 @@ const Project = () => {
                 </div>
               </div>
             </div>
+            
           </div>
         </>
       </Container>
