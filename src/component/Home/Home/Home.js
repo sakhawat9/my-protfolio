@@ -1,11 +1,11 @@
 import ParticlesBg from 'particles-bg';
-import React, { Component} from 'react';
+import React from 'react';
 import Contact from '../Contact/Contact';
 import Hero from '../Hero/Hero';
 import Main from '../Main/Main';
 import './Home.css'
 
-const Home = (Component) => {
+const Home = () => {
     return (
         <div>
             <Hero />

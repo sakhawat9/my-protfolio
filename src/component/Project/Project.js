@@ -55,10 +55,10 @@ const Project = () => {
       <Container>
         <>
           <div className="row">
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -92,7 +92,7 @@ const Project = () => {
                   book a service for washing their dresses by pay the fees. The
                   website contains a separate dashboard for the admin and user.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -119,10 +119,10 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -150,7 +150,7 @@ const Project = () => {
                     />
                   </Carousel.Item>
                 </Carousel>
-                <h3>Fashion Collection</h3>
+                <h3>Fstore</h3>
                 <p>A full-stack single-page web application where users can choose and explore product details. Users can select items and can add them to the cart section. Finally can order them from the checkout section.</p>
                 <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
@@ -180,10 +180,10 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -219,7 +219,7 @@ const Project = () => {
                   Authentication process. They can create Room and contact
                   easily.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React Redux</span>
                   <span>Redux Toolkit</span>
                   <span>Style Component</span>
@@ -245,10 +245,10 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation shadow rounded text-justify "
+                className="p-3 text-justify rounded shadow img-animation "
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -283,7 +283,7 @@ const Project = () => {
                   fees. The website contains a separate dashboard for admin and
                   user.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -310,10 +310,10 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -347,7 +347,7 @@ const Project = () => {
                   choose, explore and order food by submitting relevant
                   information.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -373,10 +373,10 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -411,7 +411,7 @@ const Project = () => {
                   his appointments and prescribe medicine to a Patient from his
                   dashboard.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -437,10 +437,10 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -475,7 +475,7 @@ const Project = () => {
                   registered event details. with a dashboard where people can
                   pick the date and time and fix an appointment.{" "}
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -501,10 +501,10 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -534,7 +534,7 @@ const Project = () => {
                 </Carousel>
                 <h3>Portfolio Website</h3>
                 <p>A frontend single-page web application. Which is a developer portfolio application. All the function of the site works smoothly including contact form. This amazing - minimalistic - animated application is made using Next.js, Tailwind CSS, TypeScript (Heart for this ) & Framer Motion.</p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React</span>
                   <span>Next.js</span>
                   <span>Typescript</span>
@@ -563,10 +563,10 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -600,7 +600,7 @@ const Project = () => {
                   a ride by selecting their pick-up location and their
                   destination location and date..{" "}
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -626,10 +626,10 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -658,7 +658,7 @@ const Project = () => {
                   </Carousel.Item>
                 </Carousel>
                 <h3>Signal App</h3>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React</span>
                   <span>React-Native</span>
                   <span>Expo</span>
@@ -685,10 +685,10 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -721,7 +721,7 @@ const Project = () => {
                   A simple, static, and one-page e-commerce website design. It
                   is an XD to HTML conversion.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>HTML5</span>
                   <span>CSS</span>
                   <span>Bootstrap</span>
@@ -745,10 +745,10 @@ const Project = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -782,7 +782,7 @@ const Project = () => {
                   programming hero's assignment #8. The project is totally
                   simple and made using latest version functionality.
                 </p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>ImgBB</span>
@@ -809,10 +809,10 @@ const Project = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
-                className="p-3 img-animation text-justify shadow rounded"
+                className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -842,7 +842,7 @@ const Project = () => {
                 </Carousel>
                 <h3>Movie Website</h3>
                 <p>Frontend movie website by using HTML, pure CSS, and Vanilla JavaScript.</p>
-                <div className="row technology px-3 pb-2">
+                <div className="px-3 pb-2 row technology">
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
