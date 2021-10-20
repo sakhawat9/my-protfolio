@@ -104,6 +104,72 @@ const Main = () => {
                 </a>
               </div>
             </div>
+            <div className="pb-4 col-lg-4 col-md-6">
+              <div
+                style={{ background: "#172A45", height: "530px" }}
+                className="p-3 text-justify rounded shadow img-animation"
+              >
+                <Carousel activeIndex={index} onSelect={handleSelect}>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fashion}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fashion2}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fashion3}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+                <h3>Fstore</h3>
+                <p>
+                Fstore is a professional dynamic e-commerce web application
+                  where users can choose and explore product details. Users can
+                  select items and can add them to the cart section. Finally can
+                  order them from the checkout section.
+                </p>
+                <div className="px-3 pb-2 row technology">
+                  <span>React.js</span>
+                  <span>React-redux</span>
+                  <span>Typescript</span>
+                  <span>React icon</span>
+                  <span>React bootstrap</span>
+                  <span>sass</span>
+                  <span>eslint</span>
+                  <span>vercel</span>
+                </div>
+                <a
+                  style={{ fontSize: "30px", paddingRight: "20px" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/SakhawatHossain55/ecommerce_store"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a
+                  style={{ fontSize: "30px" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://ecommercestore-alpha.vercel.app"
+                >
+                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                </a>
+              </div>
+            </div>
             <div className="mb-4 col-lg-4 col-md-6">
               <div
                 style={{ background: "#172A45", height: "530px" }}
@@ -175,72 +241,6 @@ const Main = () => {
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </a>
                 </div>
-              </div>
-            </div>
-            <div className="pb-4 col-lg-4 col-md-6">
-              <div
-                style={{ background: "#172A45", height: "530px" }}
-                className="p-3 text-justify rounded shadow img-animation"
-              >
-                <Carousel activeIndex={index} onSelect={handleSelect}>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={fashion}
-                      alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={fashion2}
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={fashion3}
-                      alt="Third slide"
-                    />
-                  </Carousel.Item>
-                </Carousel>
-                <h3>Fashion Collection</h3>
-                <p>
-                  A full-stack single-page web application where users can
-                  choose and explore product details. Users can select items and
-                  can add them to the cart section. Finally can order them from
-                  the checkout section.
-                </p>
-                <div className="px-3 pb-2 row technology">
-                  <span>React.js</span>
-                  <span>React-redux</span>
-                  <span>Typescript</span>
-                  <span>React icon</span>
-                  <span>React bootstrap</span>
-                  <span>sass</span>
-                  <span>eslint</span>
-                  <span>vercel</span>
-                </div>
-                <a
-                  style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/SakhawatHossain55/ecommerce_store"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  style={{ fontSize: "30px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://ecommercestore-alpha.vercel.app"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
               </div>
             </div>
           </div>

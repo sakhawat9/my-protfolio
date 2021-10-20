@@ -6,6 +6,9 @@ import laundry03 from "../../images/laundry03.png";
 import fashion from "../../images/Screenshot_23.png";
 import fashion2 from "../../images/Screenshot_24.png";
 import fashion3 from "../../images/Screenshot_25.png";
+import fstore from "../../images/fstore.png";
+import fstore2 from "../../images/fstore2.png";
+import fstore3 from "../../images/fstore3.png";
 import fast_repair01 from "../../images/fast_repair01.png";
 import fast_repair02 from "../../images/fast_repair02.png";
 import fast_repair03 from "../../images/fast_repair03.png";
@@ -105,14 +108,16 @@ const Project = () => {
                 </div>
                 <a
                   style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/SakhawatHossain55/GoWash"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   style={{ fontSize: "30px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://laundry-service-48e19.web.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -151,7 +156,12 @@ const Project = () => {
                   </Carousel.Item>
                 </Carousel>
                 <h3>Fstore</h3>
-                <p>A full-stack single-page web application where users can choose and explore product details. Users can select items and can add them to the cart section. Finally can order them from the checkout section.</p>
+                <p>
+                  Fstore is a professional dynamic e-commerce web application
+                  where users can choose and explore product details. Users can
+                  select items and can add them to the cart section. Finally can
+                  order them from the checkout section.
+                </p>
                 <div className="px-3 pb-2 row technology">
                   <span>React.js</span>
                   <span>React-redux</span>
@@ -175,6 +185,74 @@ const Project = () => {
                   target="_blank"
                   rel="noreferrer"
                   href="https://ecommercestore-alpha.vercel.app"
+                >
+                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                </a>
+              </div>
+            </div>
+            <div className="mb-4 col-lg-4 col-md-6">
+              <div
+                style={{ background: "#172A45", height: "530px" }}
+                className="p-3 text-justify rounded shadow img-animation"
+              >
+                <Carousel activeIndex={index} onSelect={handleSelect}>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fstore}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fstore2}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ height: "150px" }}
+                      className="d-block w-100"
+                      src={fstore3}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+                <h3>Nilam</h3>
+                <p>
+                  Nilam is a professional and minimal-looking domain selling
+                  template. Nilam is made with working contact forms with Google
+                  SMTP. It comes with six unique layouts which include tons of
+                  sections, customization options, and features for multiple
+                  purposes.
+                </p>
+                <div className="px-3 pb-2 row technology">
+                  <span>React.js</span>
+                  <span>Next.js</span>
+                  <span>Typescript</span>
+                  <span>React icon</span>
+                  <span>Tallwind CSS</span>
+                  <span>Nodemailer</span>
+                  <span>react-toastify</span>
+                  <span>axios</span>
+                  <span>vercel</span>
+                </div>
+                <a
+                  style={{ fontSize: "30px", paddingRight: "20px" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/foysalimran/nilam"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a
+                  style={{ fontSize: "30px" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://nilam-demo.vercel.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </a>
@@ -230,14 +308,16 @@ const Project = () => {
                 <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
-                    target="_blank" rel="noreferrer" 
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/SakhawatHossain55/chat-app"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
                     style={{ fontSize: "30px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://chat-app-team-78.web.app"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -296,14 +376,16 @@ const Project = () => {
                 </div>
                 <a
                   style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/SakhawatHossain55/fast-repair"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   style={{ fontSize: "30px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://fast-repair-c13c2.web.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -359,14 +441,16 @@ const Project = () => {
                 </div>
                 <a
                   style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/SakhawatHossain55/Daily-Mart"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   style={{ fontSize: "30px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://fresh-valley-e1a56.web.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -423,14 +507,16 @@ const Project = () => {
                 </div>
                 <a
                   style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/SakhawatHossain55/doctors-portal-main"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   style={{ fontSize: "30px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://doctors-portal-ac941.web.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -487,14 +573,16 @@ const Project = () => {
                 </div>
                 <a
                   style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/SakhawatHossain55/volunteer-network"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   style={{ fontSize: "30px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://volunteer-network-3bcf3.web.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -533,7 +621,13 @@ const Project = () => {
                   </Carousel.Item>
                 </Carousel>
                 <h3>Portfolio Website</h3>
-                <p>A frontend single-page web application. Which is a developer portfolio application. All the function of the site works smoothly including contact form. This amazing - minimalistic - animated application is made using Next.js, Tailwind CSS, TypeScript (Heart for this ) & Framer Motion.</p>
+                <p>
+                  A frontend single-page web application. Which is a developer
+                  portfolio application. All the function of the site works
+                  smoothly including contact form. This amazing - minimalistic -
+                  animated application is made using Next.js, Tailwind CSS,
+                  TypeScript (Heart for this ) & Framer Motion.
+                </p>
                 <div className="px-3 pb-2 row technology">
                   <span>React</span>
                   <span>Next.js</span>
@@ -548,14 +642,16 @@ const Project = () => {
                 <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/SakhawatHossain55/sakhawat-hossain"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
                     style={{ fontSize: "30px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://sakhawat-hossain.vercel.app"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -612,14 +708,16 @@ const Project = () => {
                 </div>
                 <a
                   style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/SakhawatHossain55/fast-ride"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   style={{ fontSize: "30px" }}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://urban-riders-9bf60.web.app"
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -670,14 +768,16 @@ const Project = () => {
                 <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/SakhawatHossain55/signal-app"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
                     style={{ fontSize: "30px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://signal-app-4d090.web.app"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -729,14 +829,16 @@ const Project = () => {
                 <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/SakhawatHossain55/panda-commerce-boostrtrap"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
                     style={{ fontSize: "30px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://sakhawathossain55.github.io/panda-commerce-boostrtrap"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -793,14 +895,16 @@ const Project = () => {
                 <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/SakhawatHossain55/Football-Facts"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
                     style={{ fontSize: "30px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://cranky-visvesvaraya-ed5ebc.netlify.app"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -841,7 +945,10 @@ const Project = () => {
                   </Carousel.Item>
                 </Carousel>
                 <h3>Movie Website</h3>
-                <p>Frontend movie website by using HTML, pure CSS, and Vanilla JavaScript.</p>
+                <p>
+                  Frontend movie website by using HTML, pure CSS, and Vanilla
+                  JavaScript.
+                </p>
                 <div className="px-3 pb-2 row technology">
                   <span>HTML</span>
                   <span>CSS</span>
@@ -851,14 +958,16 @@ const Project = () => {
                 <div>
                   <a
                     style={{ fontSize: "30px", paddingRight: "20px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/SakhawatHossain55/movie_website_html_css_javascript"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
                     style={{ fontSize: "30px" }}
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://60ddbae061cc05144df63679--inspiring-colden-4dfc5f.netlify.app"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -866,7 +975,6 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            
           </div>
         </>
       </Container>

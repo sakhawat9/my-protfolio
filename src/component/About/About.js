@@ -23,6 +23,7 @@ const About = () => {
                             <span>JavaScript</span>
                             <span>ES6</span>
                             <span>React.js</span>
+                            <span>Next.js</span>
                             <span>Node.js</span>
                             <span>Express.js</span>
                             <span>MOngoDB</span>
@@ -35,6 +36,7 @@ const About = () => {
                             <span>HTML5</span>
                             <span>CSS</span>
                             <span>Firebase</span>
+                            <span>vercel</span>
                             <span>Netlify</span>
                             <span>ImgBB</span>
                         </div>
