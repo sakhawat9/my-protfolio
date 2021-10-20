@@ -12,7 +12,7 @@ const Blog = () => {
           
             <div className="col-md-4 my-5">
               <div className="p-3 rounded" style={{background: '#172A45'}} >
-                <a target="_blank" style={{textDecoration: 'none'}} href="https://sakhawathossain7969.medium.com/top-10-javascript-interview-questions-2e1d2f106443">
+                <a target="_blank" style={{textDecoration: 'none'}} href="https://sakhawathossain7969.medium.com/top-10-javascript-interview-questions-2e1d2f106443" rel="noreferrer">
                   <img className="rounded mb-3" style={{width: '100%', height: '233px'}} src={blogImg01} alt="" />
                   <h3>Top 10 JavaScript Interview Questions</h3>
                 </a>
@@ -21,7 +21,7 @@ const Blog = () => {
         
             <div className="col-md-4 py-5">
               <div className="p-3 rounded" style={{background: '#172A45'}} >
-                  <a target="_blank" style={{textDecoration: 'none'}} href="https://sakhawathossain7969.medium.com/react-js-fundamental-10-concepts-f1bb1780df1f">
+                  <a target="_blank" style={{textDecoration: 'none'}} href="https://sakhawathossain7969.medium.com/react-js-fundamental-10-concepts-f1bb1780df1f" rel="noreferrer">
                     <img className="rounded mb-3" style={{width: '100%', height: '233px'}} src={blogImg02} alt="" />
                     <h3>Top 10 JavaScript Interview Questions</h3>
                   </a>
@@ -29,7 +29,7 @@ const Blog = () => {
             </div>
             <div className="col-md-4 py-5">
               <div className="p-3 rounded" style={{background: '#172A45'}}>
-                  <a target="_blank" style={{textDecoration: 'none'}} href="https://sakhawathossain7969.medium.com/javascript-es6-block-binding-385781357080">
+                  <a target="_blank" style={{textDecoration: 'none'}} href="https://sakhawathossain7969.medium.com/javascript-es6-block-binding-385781357080" rel="noreferrer">
                     <img className="rounded mb-3" style={{width: '100%', height: '233px'}} src={blogImg03} alt="" />
                     <h3>Top 10 JavaScript Interview Questions</h3>
                   </a>
