@@ -1,30 +1,20 @@
-.skills span{
-        background: #4b5769;
-        margin-right: 5px;
-        margin-top: 5px;
-        border-radius: 3px;
-        padding: 3px 10px;
-        margin: 10px;
-        font-size: 13px;
-        height: 26px;
+.skills span {
+  background: #4b5769;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 3px 10px;
+  margin: 10px;
+  font-size: 13px;
+  height: 26px;
 }
 
-.btn-github{
-    background-color: #0A192F;
-    margin-right: 20px;
+.icon {
+  background: #2053c9;
+  width: 50px;
+  height: 50px;
+  color: #fff;
 }
-.btn-github:hover{
-    background-color: aqua;
-}
-
-.btn-linkedIn{
-    color: blue;
-    background-color: aqua;
-    border: 2px solid aqua;
-}
-.btn-github a{
-    text-decoration: none;
-}
-.btn-linkedIn a{
-    text-decoration: none;
+.icon:hover {
+  background-color: rgb(23, 42, 69);
 }

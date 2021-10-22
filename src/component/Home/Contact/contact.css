@@ -1,0 +1,14 @@
+.contactInfo {
+  background-color: #0a192f;
+}
+
+.contactInfo p {
+    margin-bottom: 5px;
+}
+
+.icon-style {
+  background: #2053c9;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+}

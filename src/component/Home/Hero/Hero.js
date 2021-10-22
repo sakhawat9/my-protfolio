@@ -41,7 +41,7 @@ const Hero = () => {
                         
                         <p className="text-justify my-3">A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>
                         <button onClick={handleClick} as={Link} to="/about" className="btn-brand mr-3">About Me</button>
-                        <button className="button-style btn-brand mt-3"><a href="https://drive.google.com/file/d/1BzpVoR3OadSYNQVzQEF8bMCx-N44GBnI/view?usp=sharing">Download Resume</a></button>
+                        <button className="button-style btn-brand mt-3"><a href="https://drive.google.com/uc?export=download&id=16pfdkeTdG4VZh5VLwULO18M09kT35LBY">Download Resume</a></button>
                     </div>
                 </div>
                 <div className="col-md-6 p-5">
