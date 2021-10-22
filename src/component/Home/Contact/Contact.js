@@ -56,7 +56,7 @@ const Contact = () => {
               ></textarea>
               <br />
               <input
-                className="form-control"
+                className="mb-3 form-control"
                 style={{ background: "#2053C9", color: "#fff" }}
                 type="submit"
                 value="Submit"
@@ -64,10 +64,10 @@ const Contact = () => {
             </form>
           </Col>
           <Col md={5}>
-            <div className="p-4 mb-3 rounded d-flex contactInfo">
+            <div className="p-3 mb-3 rounded d-flex contactInfo">
               <span className="mr-5 rounded-circle icon-style d-flex align-items-center justify-content-center">
                 <FontAwesomeIcon
-                  style={{ width: "30px", height: "30px" }}
+                  style={{ width: "25px", height: "25px" }}
                   icon={faPhoneAlt}
                 />
               </span>
@@ -76,10 +76,10 @@ const Contact = () => {
                 <p>01811973362</p>
               </span>
             </div>
-            <div className="p-4 mb-3 rounded d-flex contactInfo">
+            <div className="p-3 mb-3 rounded d-flex contactInfo">
               <span className="mr-5 rounded-circle d-flex align-items-center icon-style justify-content-center">
                 <FontAwesomeIcon
-                  style={{ width: "30px", height: "30px" }}
+                  style={{ width: "25px", height: "25px" }}
                   icon={faEnvelope}
                 />
               </span>
@@ -88,10 +88,10 @@ const Contact = () => {
                 <p>sakhawathossain3362@gmail.com</p>
               </span>
             </div>
-            <div className="p-4 rounded d-flex contactInfo">
+            <div className="p-3 rounded d-flex contactInfo">
               <span className="mr-5 rounded-circle d-flex icon-style align-items-center justify-content-center">
                 <FontAwesomeIcon
-                  style={{ width: "30px", height: "30px" }}
+                  style={{ width: "25px", height: "25px" }}
                   icon={faMapMarkerAlt}
                 />
               </span>

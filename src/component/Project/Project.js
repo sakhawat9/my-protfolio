@@ -58,7 +58,7 @@ const Project = () => {
       <Container>
         <h1 className="pb-3 text-center">ALL PROJECT</h1>
         <div className="row">
-          <div className="mb-4 col-lg-4 col-md-6">
+          <div className="mb-4 col-lg-4 col-sm-6">
             <div
               style={{ background: "#172A45", height: "530px" }}
               className="p-3 text-justify rounded shadow img-animation"
@@ -124,7 +124,7 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
+          <div className="mb-4 col-lg-4 col-sm-6">
             <div
               style={{ background: "#172A45", height: "530px" }}
               className="p-3 text-justify rounded shadow img-animation"

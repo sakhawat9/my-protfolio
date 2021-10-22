@@ -40,7 +40,7 @@ const About = () => {
                 >
                   <span className="mr-3 rounded-circle icon d-flex align-items-center justify-content-center">
                     <FontAwesomeIcon
-                      style={{ width: "30px", height: "30px" }}
+                      style={{ width: "25px", height: "25px" }}
                       icon={faFacebookSquare}
                     />
                   </span>
@@ -48,7 +48,7 @@ const About = () => {
                 <a target="_blank" rel="noreferrer" href="/">
                   <span className="mr-3 rounded-circle icon d-flex align-items-center justify-content-center">
                     <FontAwesomeIcon
-                      style={{ width: "30px", height: "30px" }}
+                      style={{ width: "25px", height: "25px" }}
                       icon={faTwitterSquare}
                     />
                   </span>
@@ -60,7 +60,7 @@ const About = () => {
                 >
                   <span className="mr-3 rounded-circle icon d-flex align-items-center justify-content-center">
                     <FontAwesomeIcon
-                      style={{ width: "30px", height: "30px" }}
+                      style={{ width: "25px", height: "25px" }}
                       icon={faGithubSquare}
                     />
                   </span>
@@ -72,7 +72,7 @@ const About = () => {
                 >
                   <span className="mr-5 rounded-circle icon d-flex align-items-center justify-content-center">
                     <FontAwesomeIcon
-                      style={{ width: "30px", height: "30px" }}
+                      style={{ width: "25px", height: "25px" }}
                       icon={faLinkedin}
                     />
                   </span>
