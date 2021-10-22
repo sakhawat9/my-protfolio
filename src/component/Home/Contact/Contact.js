@@ -27,7 +27,7 @@ const Contact = () => {
           </p>
         </div>
         <Row className="rounded ">
-          <Col md={7}>
+          <Col md={6} lg={7}>
             <form onSubmit={handleSubmit(onSubmit)}>
               <input
                 placeholder="Your Name"
@@ -63,7 +63,7 @@ const Contact = () => {
               />
             </form>
           </Col>
-          <Col md={5}>
+          <Col md={6} lg={5}>
             <div className="p-3 mb-3 rounded d-flex contactInfo">
               <span className="mr-5 rounded-circle icon-style d-flex align-items-center justify-content-center">
                 <FontAwesomeIcon

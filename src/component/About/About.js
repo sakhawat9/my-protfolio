@@ -36,7 +36,7 @@ const About = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/sakhawat9"
+                  href="https://www.facebook.com/sakawat.hossain.338211"
                 >
                   <span className="mr-3 rounded-circle icon d-flex align-items-center justify-content-center">
                     <FontAwesomeIcon
