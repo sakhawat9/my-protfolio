@@ -8,7 +8,7 @@ const Footer = () => {
         <a
           style={{ textDecoration: "none" }}
           target="_blank"
-          href="https://github.com/SakhawatHossain55"
+          href="https://github.com/sakhawat9"
           rel="noreferrer"
         >
           Sakhawat Hossain

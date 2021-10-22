@@ -89,7 +89,7 @@ const Main = () => {
                   }}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/SakhawatHossain55/GoWash"
+                  href="https://github.com/sakhawat9/GoWash"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
@@ -155,7 +155,7 @@ const Main = () => {
                   style={{ fontSize: "30px", paddingRight: "20px" }}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/SakhawatHossain55/ecommerce_store"
+                  href="https://github.com/sakhawat9/ecommerce_store"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
@@ -227,7 +227,7 @@ const Main = () => {
                     }}
                     target="_blank"
                     rel="noreferrer"
-                    href="https://github.com/SakhawatHossain55/chat-app"
+                    href="https://github.com/sakhawat9/chat-app"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
