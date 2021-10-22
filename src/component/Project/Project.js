@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 import laundry01 from "../../images/laundry01.png";
 import laundry02 from "../../images/laundry02.png";
 import laundry03 from "../../images/laundry03.png";
@@ -46,6 +45,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
+import "./Project.css";
 
 const Project = () => {
   const [index, setIndex] = useState(0);
@@ -55,14 +55,11 @@ const Project = () => {
   };
   return (
     <div className="mb-5 projects">
-      <Container>
+      <div className="container-md">
         <h1 className="pb-3 text-center">ALL PROJECT</h1>
         <div className="row">
           <div className="mb-4 col-lg-4 col-sm-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -125,10 +122,7 @@ const Project = () => {
             </div>
           </div>
           <div className="mb-4 col-lg-4 col-sm-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -190,11 +184,8 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -258,11 +249,8 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -324,11 +312,8 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation "
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation ">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -390,11 +375,8 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -454,11 +436,8 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -520,11 +499,8 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -586,11 +562,8 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -656,11 +629,8 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -721,11 +691,8 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -782,11 +749,8 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -844,11 +808,8 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -910,11 +871,8 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="mb-4 col-lg-4 col-md-6">
-            <div
-              style={{ background: "#172A45", height: "530px" }}
-              className="p-3 text-justify rounded shadow img-animation"
-            >
+          <div className="mb-4 col-lg-4 col-sm-6">
+            <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                   <img
@@ -973,7 +931,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

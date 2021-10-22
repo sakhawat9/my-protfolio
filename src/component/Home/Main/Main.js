@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 import laundry01 from "../../../images/laundry01.png";
 import laundry02 from "../../../images/laundry02.png";
 import laundry03 from "../../../images/laundry03.png";
@@ -29,14 +28,14 @@ const Main = () => {
     setIndex(selectedIndex);
   };
   return (
-    <div className="pb-5 my-5">
-      <Container>
+    <div className="pb-5 my-5 projects">
+      <div className="container-md">
         <div>
           <h2 className="pb-3">Some of my work</h2>
           <div className="row">
-            <div className="pb-4 col-lg-4 col-md-6">
+            <div className="pb-4 col-lg-4 col-sm-6">
               <div
-                style={{ background: "#172A45", height: "530px" }}
+                style={{ background: "#172A45", height: "500px" }}
                 className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -104,10 +103,10 @@ const Main = () => {
                 </a>
               </div>
             </div>
-            <div className="pb-4 col-lg-4 col-md-6">
+            <div className="pb-4 col-lg-4 col-sm-6">
               <div
-                style={{ background: "#172A45", height: "530px" }}
-                className="p-3 text-justify rounded shadow img-animation"
+                style={{ background: "#172A45", height: "500px" }}
+                className="p-3 text-justify rounded shadow cart-style img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item>
@@ -137,7 +136,7 @@ const Main = () => {
                 </Carousel>
                 <h3>Fstore</h3>
                 <p>
-                Fstore is a professional dynamic e-commerce web application
+                  Fstore is a professional dynamic e-commerce web application
                   where users can choose and explore product details. Users can
                   select items and can add them to the cart section. Finally can
                   order them from the checkout section.
@@ -170,9 +169,9 @@ const Main = () => {
                 </a>
               </div>
             </div>
-            <div className="mb-4 col-lg-4 col-md-6">
+            <div className="mb-4 col-lg-4 col-sm-6">
               <div
-                style={{ background: "#172A45", height: "530px" }}
+                style={{ background: "#172A45", height: "500px" }}
                 className="p-3 text-justify rounded shadow img-animation"
               >
                 <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -248,7 +247,7 @@ const Main = () => {
             All Project
           </button>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

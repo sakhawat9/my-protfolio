@@ -1,9 +1,9 @@
-*{
+* {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.btn-brand{
-  background-color: #2053C9;
+.btn-brand {
+  background-color: #2053c9;
   border: 2px solid #2053c9;
   color: #fff;
   text-transform: uppercase;
@@ -11,13 +11,11 @@
   font-size: 20px;
   padding: 7px 15px;
   border-radius: 7px;
-
 }
-.btn-brand:hover{
-  background-color: #0A192F;
-  border: 2px solid #2053C9;
+.btn-brand:hover {
+  background-color: #0a192f;
+  border: 2px solid #2053c9;
 }
-
 
 .App-link {
   color: #61dafb;

@@ -1,0 +1,33 @@
+.cart-style {
+  background-color: #172a45;
+  height: 500px;
+}
+
+@media only screen and (max-width: 740px) {
+  .cart-style {
+    height: 550px;
+  }
+  .cart-style h3 {
+    font-size: 22px;
+  }
+  .cart-style p {
+    font-size: 12px;
+  }
+  .cart-style span {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cart-style {
+    height: 450px;
+  }
+  .cart-style h3 {
+    font-size: 22px;
+  }
+  .cart-style p {
+    font-size: 12px;
+  }
+  .cart-style span {
+    font-size: 12px;
+  }
+}
