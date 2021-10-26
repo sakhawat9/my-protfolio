@@ -1,18 +1,36 @@
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import {
   faEnvelope,
   faMapMarkerAlt,
   faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { useForm } from "react-hook-form";
 import "./contact.css";
 
 const Contact = () => {
-  const { register, handleSubmit } = useForm();
+  const form = useRef();
 
-  const onSubmit = () => {};
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_9yx52tg",
+        "template_0m4amai",
+        e.target,
+        "user_cjJIEadZRrm3Msru6gwso"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <section>
       <Container
@@ -28,21 +46,19 @@ const Contact = () => {
         </div>
         <Row className="rounded ">
           <Col md={6} lg={7}>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form ref={form} onSubmit={sendEmail}>
               <input
                 placeholder="Your Name"
+                type="text"
                 name="name"
-                {...register("name")}
                 className="form-control"
-                required
               />
               <br />
               <input
                 className="form-control"
-                name="email"
-                {...register("email")}
+                type="email"
+                name="usr_email"
                 placeholder="Your Email"
-                required
               />
               <br />
               <textarea
@@ -51,8 +67,6 @@ const Contact = () => {
                 placeholder="Enter Message"
                 cols="30"
                 rows="5"
-                {...register("message")}
-                required
               ></textarea>
               <br />
               <input
