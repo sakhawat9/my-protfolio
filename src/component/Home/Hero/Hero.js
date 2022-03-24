@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import image from "../../../images/my picture 1.png";
 import TypeWriterEffect from "react-typewriter-effect";
+import { Container } from "react-bootstrap";
 import "./Hero.css";
 
 const Hero = () => {
@@ -11,13 +12,13 @@ const Hero = () => {
     history.push("/about");
   };
   return (
-    <>
-      <div className="container-md">
+    <div className="mt-5 pt-5 pb-5">
+      <Container>
         <div className="pb-5 row">
           <div className="col-sm-6 d-flex align-items-center">
             <div>
-              <p>Hello, I'm</p>
-              <h1>Sakhawat Hossain</h1>
+              <p>Hy There...</p>
+              <h1>I'M Sakhawat Hossain</h1>
               <TypeWriterEffect
                 textStyle={{
                   fontFamily: "Roboto",
@@ -39,17 +40,15 @@ const Hero = () => {
               />
 
               <p className="my-3 text-justify">
-                A self-motivated and enthusiastic web developer with a deep
-                interest in JavaScript. To work in the Software industry with
-                modern web technologies of different local & multinational
-                Software/ IT agencies of Bangladesh and grow rapidly with
-                increasing responsibilities.
+                An aspiring MERN Stack Developer with huge knowledge and
+                proficiency in JavaScript and ReactJS as well as strong skills
+                in writing clean and efficient codes.
               </p>
               <button
                 onClick={handleClick}
                 as={Link}
                 to="/about"
-                className="mr-3 btn-brand"
+                className="me-3 btn-brand"
               >
                 About Me
               </button>
@@ -64,8 +63,8 @@ const Hero = () => {
             <img src={image} alt="" />
           </div>
         </div>
-      </div>
-    </>
+      </Container>
+    </div>
   );
 };
 

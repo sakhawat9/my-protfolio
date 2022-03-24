@@ -6,8 +6,9 @@ import { Container } from "react-bootstrap";
 
 const Blog = () => {
   return (
-    <div>
+    <div className="my-5 pt-5">
       <Container>
+      <h1 className="pb-3 text-center">ALL Blogs</h1>
         <div className="row">
           <div className="my-5 col-md-4">
             <div className="p-3 rounded" style={{ background: "#172A45" }}>

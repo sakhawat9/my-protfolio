@@ -9,9 +9,8 @@ import fashion from "../../../images/Screenshot_23.png";
 import fashion2 from "../../../images/Screenshot_24.png";
 import fashion3 from "../../../images/Screenshot_25.png";
 import { useHistory } from "react-router";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { GrView } from "react-icons/gr";
+import { FiGithub } from "react-icons/fi";
 import "./Main.css";
 import Carousel from "react-bootstrap/Carousel";
 
@@ -28,49 +27,49 @@ const Main = () => {
     setIndex(selectedIndex);
   };
   return (
-    <div className="pb-5 my-5 projects">
-      <div className="container-md">
-        <div>
-          <h2 className="pb-3">Some of my work</h2>
-          <div className="row">
-            <div className="pb-4 col-lg-4 col-sm-6">
-              <div
-                style={{ background: "#172A45", height: "500px" }}
-                className="p-3 text-justify rounded shadow img-animation"
-              >
-                <Carousel activeIndex={index} onSelect={handleSelect}>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={laundry01}
-                      alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={laundry02}
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={laundry03}
-                      alt="Third slide"
-                    />
-                  </Carousel.Item>
-                </Carousel>
+    <div className="pb-5 mt-5">
+      <div className="container">
+        <h2 className="pb-3">Some of my work</h2>
+        <div className="row row-cols-1 row-cols-md-3 g-4 dark">
+          <div className="col">
+            <div
+              className="card h-100 p-3 text-justify rounded shadow img-animation"
+              style={{ background: "#172A45" }}
+            >
+              <Carousel activeIndex={index} onSelect={handleSelect}>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={laundry01}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={laundry02}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={laundry03}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+              <div className="card-body">
                 <h3>Go Wash</h3>
                 <p>
                   A full-stack single-page web application where customers can
                   book a service for washing their dresses by pay the fees. The
                   website contains a separate dashboard for the admin and user
                 </p>
-                <div className="px-3 pb-2 row technology">
+                <div className="pe-4 pb-3 technology">
                   <span>React.js</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
@@ -80,60 +79,65 @@ const Main = () => {
                   <span>Firebase</span>
                   <span>Bootstrap</span>
                 </div>
-                <a
-                  style={{
-                    fontSize: "30px",
-                    marginTop: "auto",
-                    marginBottom: "0",
-                    paddingRight: "20px",
-                  }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/sakhawat9/GoWash"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  style={{ fontSize: "30px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://laundry-service-48e19.web.app"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
+              </div>
+              <div className="card-footer ">
+                <div className="d-flex gap-3 justify-content-center">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/sakhawat9/GoWash"
+                  >
+                    <FiGithub
+                      style={{ fontSize: "40px" }}
+                      className="p-2 rounded-circle bg-light github-icon"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://laundry-service-48e19.web.app"
+                  >
+                    <GrView
+                      style={{ fontSize: "40px" }}
+                      className="p-2 rounded-circle bg-light"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="pb-4 col-lg-4 col-sm-6">
-              <div
-                style={{ background: "#172A45", height: "500px" }}
-                className="p-3 text-justify rounded shadow cart-style img-animation"
-              >
-                <Carousel activeIndex={index} onSelect={handleSelect}>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={fashion}
-                      alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={fashion2}
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={fashion3}
-                      alt="Third slide"
-                    />
-                  </Carousel.Item>
-                </Carousel>
+          </div>
+          <div className="col">
+            <div
+              className="card h-100 p-3 text-justify rounded shadow img-animation"
+              style={{ background: "#172A45" }}
+            >
+              <Carousel activeIndex={index} onSelect={handleSelect}>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={fashion}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={fashion2}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={fashion3}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+              <div className="card-body">
                 <h3>Fstore</h3>
                 <p>
                   Fstore is a professional dynamic e-commerce web application
@@ -141,7 +145,7 @@ const Main = () => {
                   select items and can add them to the cart section. Finally can
                   order them from the checkout section.
                 </p>
-                <div className="px-3 pb-2 row technology">
+                <div className="px-3 pb-2 technology">
                   <span>React.js</span>
                   <span>React-redux</span>
                   <span>Typescript</span>
@@ -151,55 +155,65 @@ const Main = () => {
                   <span>eslint</span>
                   <span>vercel</span>
                 </div>
-                <a
-                  style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/sakhawat9/ecommerce_store"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  style={{ fontSize: "30px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://ecommercestore-alpha.vercel.app"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
+              </div>
+              <div className="card-footer">
+                <div className="d-flex gap-3 justify-content-center">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/sakhawat9/ecommerce_store"
+                  >
+                    <FiGithub
+                      style={{ fontSize: "40px" }}
+                      className="p-2 rounded-circle bg-light github-icon"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://ecommercestore-alpha.vercel.app"
+                  >
+                    <GrView
+                      style={{ fontSize: "40px" }}
+                      className="p-2 rounded-circle bg-light"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="mb-4 col-lg-4 col-sm-6">
-              <div
-                style={{ background: "#172A45", height: "500px" }}
-                className="p-3 text-justify rounded shadow img-animation"
-              >
-                <Carousel activeIndex={index} onSelect={handleSelect}>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={chart_app01}
-                      alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={chart_app02}
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ height: "150px" }}
-                      className="d-block w-100"
-                      src={chart_app03}
-                      alt="Third slide"
-                    />
-                  </Carousel.Item>
-                </Carousel>
+          </div>
+          <div className="col">
+            <div
+              className="card h-100 p-3 text-justify rounded shadow img-animation"
+              style={{ background: "#172A45" }}
+            >
+              <Carousel activeIndex={index} onSelect={handleSelect}>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={chart_app01}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={chart_app02}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    style={{ height: "180px" }}
+                    className="d-block w-100"
+                    src={chart_app03}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+              <div className="card-body">
                 <h3>Chart App</h3>
                 <p>
                   This is a Communicating website where a person can contact
@@ -208,7 +222,7 @@ const Main = () => {
                   Authentication process. They can create Room and contact
                   easily.
                 </p>
-                <div className="px-3 pb-2 row technology">
+                <div className="px-3 pb-2 technology">
                   <span>React Redux</span>
                   <span>Redux Toolkit</span>
                   <span>Style Component</span>
@@ -216,37 +230,37 @@ const Main = () => {
                   <span>Firebase</span>
                   <span>React Firebase Hook</span>
                 </div>
-                <div className="">
+              </div>
+              <div className="card-footer">
+                <div className="d-flex gap-3 justify-content-center">
                   <a
-                    className="mt-auto mb-0"
-                    style={{
-                      fontSize: "30px",
-                      marginTop: "auto",
-                      marginBottom: "0",
-                      paddingRight: "20px",
-                    }}
                     target="_blank"
                     rel="noreferrer"
                     href="https://github.com/sakhawat9/chat-app"
                   >
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FiGithub
+                      style={{ fontSize: "40px" }}
+                      className="p-2 rounded-circle bg-light github-icon"
+                    />
                   </a>
                   <a
-                    style={{ fontSize: "30px" }}
                     target="_blank"
                     rel="noreferrer"
                     href="https://chat-app-team-78.web.app"
                   >
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <GrView
+                      style={{ fontSize: "40px" }}
+                      className="p-2 rounded-circle bg-light"
+                    />
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <button onClick={handleClick} className="mt-3 btn-brand">
-            All Project
-          </button>
         </div>
+        <button onClick={handleClick} className="mt-3 btn-brand">
+          All Project
+        </button>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <section>
       <Container
-        className="p-5 mb-5 text-center"
+        className="p-5 my-5 text-center"
         style={{ background: "#172A45" }}
       >
         <div>

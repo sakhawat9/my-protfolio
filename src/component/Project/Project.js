@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FiGithub } from "react-icons/fi";
+import { GrView } from "react-icons/gr";
 import laundry01 from "../../images/laundry01.png";
 import laundry02 from "../../images/laundry02.png";
 import laundry03 from "../../images/laundry03.png";
@@ -47,80 +49,128 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
 import "./Project.css";
 
+const data = [
+  {
+    title: "Go Wash",
+    descriptor:
+      "A full-stack single-page web application where customers can book a service for washing their dresses by pay the fees. The  website contains a separate dashboard for the admin and user.",
+    image: [`${laundry01}`, `${laundry02}`, `${laundry03}`],
+    technology: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MOngoDB",
+      "Material-ui",
+      "Stripe.js",
+      "FontAwesome",
+      "Firebase",
+      "Bootstrap",
+    ],
+    github: "https://github.com/sakhawat9/GoWash",
+    liveLink: "https://laundry-service-48e19.web.app",
+  },
+  {
+    title: "Fstore",
+    descriptor:
+      "Fstore is a professional dynamic e-commerce web application where users can choose and explore product details. Users can select items and can add them to the cart section. Finally can order them from the checkout section.",
+    image: [`${fashion}`, `${fashion2}`, `${fashion3}`],
+    technology: [
+      "React.js",
+      "React-redux",
+      "Typescript",
+      "React icon",
+      "React bootstrap",
+      "sass",
+      "eslint",
+      "vercel",
+    ],
+    github: "https://github.com/sakhawat9/fstore",
+    liveLink: "https://ecommercestore-alpha.vercel.app",
+  },
+  {
+    title: "Fstore",
+    descriptor:
+      "Fstore is a professional dynamic e-commerce web application where users can choose and explore product details. Users can select items and can add them to the cart section. Finally can order them from the checkout section.",
+    image: [`${fashion}`, `${fashion2}`, `${fashion3}`],
+    technology: [
+      "React.js",
+      "React-redux",
+      "Typescript",
+      "React icon",
+      "React bootstrap",
+      "sass",
+      "eslint",
+      "vercel",
+    ],
+    github: "https://github.com/sakhawat9/fstore",
+    liveLink: "https://ecommercestore-alpha.vercel.app",
+  },
+];
+
 const Project = () => {
+  console.log("project", data);
+
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
   return (
-    <div className="mb-5 projects">
-      <div className="container-md">
-        <h1 className="pb-3 text-center">ALL PROJECT</h1>
-        <div className="row">
-          <div className="mb-4 col-lg-4 col-sm-6">
-            <div className="p-3 text-justify rounded shadow cart-style img-animation">
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={laundry01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={laundry02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={laundry03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <h3>Go Wash</h3>
-              <p>
-                A full-stack single-page web application where customers can
-                book a service for washing their dresses by pay the fees. The
-                website contains a separate dashboard for the admin and user.
-              </p>
-              <div className="px-3 pb-2 row technology">
-                <span>React.js</span>
-                <span>Node.js</span>
-                <span>Express.js</span>
-                <span>MOngoDB</span>
-                <span>Material-ui</span>
-                <span>Stripe.js</span>
-                <span>FontAwesome</span>
-                <span>Firebase</span>
-                <span>Bootstrap</span>
+    <div className="py-5 mt-5">
+      <div className="container">
+        <h2 className="pb-3 text-center">Some of my work</h2>
+        <div className="row row-cols-1 row-cols-md-3 g-4 dark">
+          {data.map((projects) => (
+            <div className="col">
+              <div
+                className="card h-100 p-3 text-justify rounded shadow img-animation"
+                style={{ background: "#172A45" }}
+              >
+                <Carousel activeIndex={index} onSelect={handleSelect}>
+                  {projects.image.map((img) => (
+                    <Carousel.Item>
+                      <img
+                        style={{ height: "180px" }}
+                        className="d-block w-100"
+                        src={img}
+                        alt="First slide"
+                      />
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
+                <div className="card-body">
+                  <h3>{projects.title}</h3>
+                  <p>{projects.descriptor}</p>
+                  <div className="px-3 pb-2 technology">
+                    {projects.technology.map((te) => (
+                      <span>{te}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="card-footer">
+                  <div className="d-flex gap-3 justify-content-center">
+                    <a target="_blank" rel="noreferrer" href={projects.github}>
+                      <FiGithub
+                        style={{ fontSize: "40px" }}
+                        className="p-2 rounded-circle bg-light github-icon"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={projects.liveLink}
+                    >
+                      <GrView
+                        style={{ fontSize: "40px" }}
+                        className="p-2 rounded-circle bg-light"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-              <a
-                style={{ fontSize: "30px", paddingRight: "20px" }}
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/sakhawat9/GoWash"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a
-                style={{ fontSize: "30px" }}
-                target="_blank"
-                rel="noreferrer"
-                href="https://laundry-service-48e19.web.app"
-              >
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
-              </a>
             </div>
-          </div>
+          ))}
+          {/* 
           <div className="mb-4 col-lg-4 col-sm-6">
             <div className="p-3 text-justify rounded shadow cart-style img-animation">
               <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -929,7 +979,7 @@ const Project = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
