@@ -53,7 +53,7 @@ const Hero = () => {
                 About Me
               </button>
               <button className="mt-3 button-style btn-brand">
-                <a href="https://drive.google.com/uc?export=download&id=16pfdkeTdG4VZh5VLwULO18M09kT35LBY">
+                <a href="https://drive.google.com/uc?export=download&id=1BzpVoR3OadSYNQVzQEF8bMCx-N44GBnI">
                   Download Resume
                 </a>
               </button>
