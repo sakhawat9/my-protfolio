@@ -164,7 +164,11 @@ const data = [
     title: "Doctors Portal",
     descriptor:
       "A single-page web app with a dashboard where people can pick the date and time and fix an appointment. A doctor can review his appointments and prescribe medicine to a Patient from his dashboard.",
-    image: [`${doctors_portal01}`, `${doctors_portal02}`, `${doctors_portal03}`],
+    image: [
+      `${doctors_portal01}`,
+      `${doctors_portal02}`,
+      `${doctors_portal03}`,
+    ],
     technology: [
       "React.js",
       "Node.js",
@@ -181,7 +185,7 @@ const data = [
   {
     title: "volunteer_networks",
     descriptor:
-    "A single-page web app. Admin can add any event and he can see all events. Users can register for an event and see all registered event details. with a dashboard where people can pick the date and time and fix an appointment.",
+      "A single-page web app. Admin can add any event and he can see all events. Users can register for an event and see all registered event details. with a dashboard where people can pick the date and time and fix an appointment.",
     image: [`${volunteer01}`, `${volunteer02}`, `${volunteer03}`],
     technology: [
       "React.js",
@@ -195,6 +199,60 @@ const data = [
     ],
     github: "https://github.com/sakhawat9/volunteer-network",
     liveLink: "https://volunteer-network-3bcf3.web.app",
+  },
+  {
+    title: "Portfolio Website",
+    descriptor:
+      "A frontend single-page web application. Which is a developer portfolio application. All the function of the site works smoothly including contact form. This amazing - minimalistic - animated application is made using Next.js, Tailwind CSS & Framer Motion.",
+    image: [`${portfolio}`, `${portfolio2}`, `${portfolio3}`],
+    technology: [
+      "Next.js",
+      "Typescript",
+      "Nodemailer",
+      "React Toastify",
+      "React Hook Form",
+      "Tailwind CSS",
+      "React-icons",
+    ],
+    github: "https://github.com/sakhawat9/sakhawat-hossain",
+    liveLink: "https://sakhawat-hossain.vercel.app",
+  },
+  {
+    title: "Fast_Ride",
+    descriptor:
+      "A single-page web app with a dashboard where users can request a ride by selecting their pick-up location and their destination location and date..",
+    image: [`${fast_ride01}`, `${fast_ride02}`, `${fast_ride03}`],
+    technology: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MOngoDB",
+      "Material-ui",
+      "FontAwesome",
+      "Firebase",
+      "React bootstrap",
+    ],
+    github: "https://github.com/sakhawat9/fast-ride",
+    liveLink: "https://urban-riders-9bf60.web.app",
+  },
+  {
+    title: "Panda Commerce",
+    descriptor:
+      "A simple, static, and one-page e-commerce website design. It is an XD to HTML conversion.",
+    image: [`${panda01}`, `${panda02}`, `${panda03}`],
+    technology: ["HTML5", "CSS", "Bootstrap"],
+    github: "https://github.com/sakhawat9/panda-commerce-boostrtrap",
+    liveLink: "https://sakhawathossain55.github.io/panda-commerce-boostrtrap",
+  },
+  {
+    title: "Movie Website",
+    descriptor:
+      "Frontend movie website by using HTML, pure CSS, and Vanilla JavaScript.",
+    image: [`${movie_app01}`, `${movie_app02}`, `${movie_app03}`],
+    technology: ["HTML5", "CSS", "JavaScript", "FontAwesome"],
+    github: "https://github.com/sakhawat9/movie_website_html_css_javascript",
+    liveLink:
+      "https://60ddbae061cc05144df63679--inspiring-colden-4dfc5f.netlify.app",
   },
 ];
 
@@ -261,439 +319,6 @@ const Project = () => {
               </div>
             </div>
           ))}
-          {/* 
-          
-          <div className="mb-4 col-lg-4 col-sm-6">
-            <div className="p-3 text-justify rounded shadow cart-style img-animation">
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={volunteer01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={volunteer02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={volunteer03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <h3>volunteer_networks</h3>
-              <p>
-                A single-page web app. Admin can add any event and he can see
-                all events. Users can register for an event and see all
-                registered event details. with a dashboard where people can pick
-                the date and time and fix an appointment.{" "}
-              </p>
-              <div className="px-3 pb-2 row technology">
-                <span>React.js</span>
-                <span>Node.js</span>
-                <span>Express.js</span>
-                <span>MOngoDB</span>
-                <span>Material-ui</span>
-                <span>FontAwesome</span>
-                <span>Firebase</span>
-                <span>React bootstrap</span>
-              </div>
-              <a
-                style={{ fontSize: "30px", paddingRight: "20px" }}
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/sakhawat9/volunteer-network"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a
-                style={{ fontSize: "30px" }}
-                target="_blank"
-                rel="noreferrer"
-                href="https://volunteer-network-3bcf3.web.app"
-              >
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
-              </a>
-            </div>
-          </div>
-          <div className="mb-4 col-lg-4 col-sm-6">
-            <div className="p-3 text-justify rounded shadow cart-style img-animation">
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={portfolio}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={portfolio2}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={portfolio3}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <h3>Portfolio Website</h3>
-              <p>
-                A frontend single-page web application. Which is a developer
-                portfolio application. All the function of the site works
-                smoothly including contact form. This amazing - minimalistic -
-                animated application is made using Next.js, Tailwind CSS,
-                TypeScript (Heart for this ) & Framer Motion.
-              </p>
-              <div className="px-3 pb-2 row technology">
-                <span>React</span>
-                <span>Next.js</span>
-                <span>Typescript</span>
-                <span>Nodemailer</span>
-                <span>React Toastify</span>
-                <span>React Hook Form</span>
-                <span>Tailwind CSS</span>
-                <span>Framer Motion</span>
-                <span>react-icons</span>
-              </div>
-              <div>
-                <a
-                  style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/sakhawat9/sakhawat-hossain"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  style={{ fontSize: "30px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://sakhawat-hossain.vercel.app"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="mb-4 col-lg-4 col-sm-6">
-            <div className="p-3 text-justify rounded shadow cart-style img-animation">
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={fast_ride01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={fast_ride02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={fast_ride03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <h3>Fast_Ride</h3>
-              <p>
-                A single-page web app with a dashboard where users can request a
-                ride by selecting their pick-up location and their destination
-                location and date..{" "}
-              </p>
-              <div className="px-3 pb-2 row technology">
-                <span>React.js</span>
-                <span>Node.js</span>
-                <span>Express.js</span>
-                <span>MOngoDB</span>
-                <span>Material-ui</span>
-                <span>FontAwesome</span>
-                <span>Firebase</span>
-                <span>React bootstrap</span>
-              </div>
-              <a
-                style={{ fontSize: "30px", paddingRight: "20px" }}
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/sakhawat9/fast-ride"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a
-                style={{ fontSize: "30px" }}
-                target="_blank"
-                rel="noreferrer"
-                href="https://urban-riders-9bf60.web.app"
-              >
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
-              </a>
-            </div>
-          </div>
-          <div className="mb-4 col-lg-4 col-sm-6">
-            <div className="p-3 text-justify rounded shadow cart-style img-animation">
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={signal_app01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={signal_app02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={signal_app03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <h3>Signal App</h3>
-              <div className="px-3 pb-2 row technology">
-                <span>React</span>
-                <span>React-Native</span>
-                <span>Expo</span>
-                <span>Firebase</span>
-                <span>Style Component</span>
-                <span>HTML5</span>
-                <span>CSS</span>
-              </div>
-              <div>
-                <a
-                  style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/sakhawat9/signal-app"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  style={{ fontSize: "30px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://signal-app-4d090.web.app"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="mb-4 col-lg-4 col-sm-6">
-            <div className="p-3 text-justify rounded shadow cart-style img-animation">
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={panda01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={panda02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={panda03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <h3>Panda Commerce</h3>
-              <p>
-                A simple, static, and one-page e-commerce website design. It is
-                an XD to HTML conversion.
-              </p>
-              <div className="px-3 pb-2 row technology">
-                <span>HTML5</span>
-                <span>CSS</span>
-                <span>Bootstrap</span>
-              </div>
-              <div>
-                <a
-                  style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/sakhawat9/panda-commerce-boostrtrap"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  style={{ fontSize: "30px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://sakhawathossain55.github.io/panda-commerce-boostrtrap"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-4 col-lg-4 col-sm-6">
-            <div className="p-3 text-justify rounded shadow cart-style img-animation">
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={football01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={football02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={football03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <h3>Football Facts</h3>
-              <p>
-                Football Facts is a professional react web app what I made for
-                programming hero's assignment #8. The project is totally simple
-                and made using latest version functionality.
-              </p>
-              <div className="px-3 pb-2 row technology">
-                <span>React.js</span>
-                <span>Node.js</span>
-                <span>ImgBB</span>
-                <span>FontAwesome</span>
-                <span>Heroku</span>
-                <span>Bootstrap</span>
-              </div>
-              <div>
-                <a
-                  style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/sakhawat9/Football-Facts"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  style={{ fontSize: "30px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://cranky-visvesvaraya-ed5ebc.netlify.app"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-4 col-lg-4 col-sm-6">
-            <div className="p-3 text-justify rounded shadow cart-style img-animation">
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={movie_app01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={movie_app02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "150px" }}
-                    className="d-block w-100"
-                    src={movie_app03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <h3>Movie Website</h3>
-              <p>
-                Frontend movie website by using HTML, pure CSS, and Vanilla
-                JavaScript.
-              </p>
-              <div className="px-3 pb-2 row technology">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>FontAwesome</span>
-              </div>
-              <div>
-                <a
-                  style={{ fontSize: "30px", paddingRight: "20px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/sakhawat9/movie_website_html_css_javascript"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  style={{ fontSize: "30px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://60ddbae061cc05144df63679--inspiring-colden-4dfc5f.netlify.app"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
