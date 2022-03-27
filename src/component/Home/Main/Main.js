@@ -5,12 +5,9 @@ import cheesyKitchen3 from "../../../images/cheesyKitchen3.png";
 import academist from "../../../images/academist.png";
 import academist2 from "../../../images/academist2.png";
 import academist3 from "../../../images/academist3.png";
-import chart_app01 from "../../../images/Capture.PNG";
-import chart_app02 from "../../../images/Capture-1.PNG";
-import chart_app03 from "../../../images/Capture-2.PNG";
-import fashion from "../../../images/Screenshot_23.png";
-import fashion2 from "../../../images/Screenshot_24.png";
-import fashion3 from "../../../images/Screenshot_25.png";
+import watchShop from "../../../images/watchShop.png";
+import watchShop2 from "../../../images/watchShop2.png";
+import watchShop3 from "../../../images/watchShop3.png";
 import { useHistory } from "react-router";
 import { GrView } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
@@ -86,7 +83,7 @@ const Main = () => {
 
                     <Modal.Body className="container">
                       <div
-                        className="row single-project d-flex align-items-center "
+                        className="row single-project d-flex align-items-center details"
                         data-aos="flip-left"
                         data-aos-duration="2000"
                       >
@@ -221,7 +218,7 @@ const Main = () => {
 
                     <Modal.Body className="container">
                       <div
-                        className="row single-project d-flex align-items-center"
+                        className="row single-project d-flex align-items-center details"
                         data-aos="flip-left"
                         data-aos-duration="2000"
                       >
@@ -319,13 +316,14 @@ const Main = () => {
           <div className="col">
             <div className="card h-100">
               <div className="card-img-hover">
-                <img src={chart_app01} className="card-img-top" alt="..." />
+                <img src={watchShop} className="card-img-top" alt="..." />
               </div>
               <div className="card-body">
-                <h5 className="card-title">We care</h5>
+                <h5 className="card-title">WATCH_SHOP</h5>
                 <p className="card-text">
-                  We Care is a single-page web application where users can book
-                  appointments for doctors.
+                  Watch_Shop is an e-commerce website where users can see
+                  watches on the basis of category, can add watches to cart and
+                  watchlist.
                 </p>
               </div>
               <div className="card-footer d-flex justify-content-center">
@@ -334,14 +332,9 @@ const Main = () => {
                     <Button
                       key={idx}
                       className="me-2 fw-bold link-btn"
-                      // style={{
-                      //   background: "#ff4a57",
-                      //   border: "none",
-                      //   color: "#1f2235",
-                      // }}
                       onClick={() => handleShow3(v)}
                     >
-                      More About We Care
+                      More About WATCH_SHOP
                       {typeof v === "string" && `below ${v.split("-")[0]}`}
                     </Button>
                   ))}
@@ -351,12 +344,12 @@ const Main = () => {
                     onHide={() => setShow3(false)}
                   >
                     <Modal.Header closeButton>
-                      <Modal.Title>We Care</Modal.Title>
+                      <Modal.Title className="details-title">WATCH_SHOP</Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body className="container">
                       <div
-                        className="row single-project d-flex align-items-center"
+                        className="row single-project d-flex align-items-center details"
                         data-aos="flip-left"
                         data-aos-duration="2000"
                       >
@@ -365,28 +358,28 @@ const Main = () => {
                             <Carousel.Item>
                               <img
                                 className="d-block w-100"
-                                src={chart_app01}
+                                src={watchShop}
                                 alt="First slide"
                               />
                             </Carousel.Item>
                             <Carousel.Item>
                               <img
                                 className="d-block w-100"
-                                src={chart_app02}
+                                src={watchShop2}
                                 alt="second slide"
                               />
                             </Carousel.Item>
                             <Carousel.Item>
                               <img
                                 className="d-block w-100"
-                                src={chart_app03}
+                                src={watchShop3}
                                 alt="Third slide"
                               />
                             </Carousel.Item>
                           </Carousel>
                           <div className="project-link pt-5  text-center">
                             <a
-                              href="https://chat-app-team-78.web.app"
+                              href="https://watch-shop-ruddy.vercel.app/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -402,7 +395,7 @@ const Main = () => {
                               </button>
                             </a>
                             <a
-                              href="https://github.com/sakhawat9/chat-app"
+                              href="https://github.com/sakhawat9/watch_shop"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -420,30 +413,41 @@ const Main = () => {
                           </div>
                         </div>
                         <div className="col-md-6">
-                          <h2>We Care</h2>
+                          <h2>WATCH_SHOP</h2>
                           <div>
-                            We Care is a single-page web application where users
-                            can book appointments for doctors.
                             <ul>
-                              <li>User have to create account first.</li>
-                              <li>User can simply login with google.</li>
                               <li>
-                                Users can check doctor's details and confirm the
-                                appointment.
+                                Watch_Shop is an e-commerce website where users
+                                can see watches on the basis of category, can
+                                add watches to cart and watchlist.
+                              </li>
+                              <li>
+                                A user can manage his profile and can update all
+                                details of him. As well as can order products by
+                                giving shipping address and payment info.
+                              </li>
+                              <li>
+                                Admin can add new products, manage orders,
+                                manage users, and also has the authority of CRUD
+                                operation.
                               </li>
                             </ul>
                           </div>
                           <h4 className="my-2 fw-bold">Technology</h4>
                           <div className="px-3 pb-2 technology">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>Bootstrap</span>
-                            <span>React Bootstrap</span>
-                            <span>JavaScript</span>
-                            <span>React.js</span>
-                            <span>React Router</span>
-                            <span>React Icon</span>
-                            <span>Firebase</span>
+                            <span>Next.js</span>
+                            <span>MongoDB</span>
+                            <span>Mongoose</span>
+                            <span>Node.js</span>
+                            <span>React icons</span>
+                            <span>Tailwind css</span>
+                            <span>Node sass</span>
+                            <span>React hook form</span>
+                            <span>React multi carousel</span>
+                            <span>slick carousel</span>
+                            <span>Nodemailer</span>
+                            <span>Vercel</span>
+                            <span>Sweetalert2</span>
                           </div>
                         </div>
                       </div>
