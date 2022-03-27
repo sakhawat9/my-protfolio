@@ -8,6 +8,8 @@
   font-size: 14px;
   display: inline-block;
 }
+
+/* Projects */
 .img-animation figure {
   overflow: hidden;
 }
@@ -25,4 +27,61 @@
 
 .github-icon {
     color: #000 !important;
+}
+
+.card-body h5,
+.card-body p {
+  color: #fff;
+}
+
+
+/* Main */
+
+.single-project {
+  padding: 30px 15px;
+  border-radius: 10px;
+  border: 2px solid #1586b3;
+  background-color: rgb(238, 235, 235);
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.single-project h2,
+h4 {
+  color: #ff4a57;
+  font-weight: 700;
+}
+
+
+.project-link a {
+  margin: 0 10px 0 10px;
+}
+
+.link-btn:hover {
+  background-color: #2c314d;
+  color: #ff4a57;
+}
+
+.link-btn {
+  background-color: #ff4a57;
+  border: none;
+  color: #1f2235;
+}
+
+.card-img-hover {
+  overflow: hidden;
+}
+
+.card-img-hover img:hover {
+  transition: 0.5s all ease-in-out;
+  transform: scale(1.2);
+}
+
+.card-title {
+  color: #02001b !important;
+}
+
+.card-text {
+  color: #02001b !important;
 }

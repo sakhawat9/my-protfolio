@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import laundry01 from "../../../images/laundry01.png";
-import laundry02 from "../../../images/laundry02.png";
-import laundry03 from "../../../images/laundry03.png";
+import cheesyKitchen1 from "../../../images/cheesyKitchen1.png";
+import cheesyKitchen2 from "../../../images/cheesyKitchen2.png";
+import cheesyKitchen3 from "../../../images/cheesyKitchen3.png";
+import academist from "../../../images/academist.png";
+import academist2 from "../../../images/academist2.png";
+import academist3 from "../../../images/academist3.png";
 import chart_app01 from "../../../images/Capture.PNG";
 import chart_app02 from "../../../images/Capture-1.PNG";
 import chart_app03 from "../../../images/Capture-2.PNG";
@@ -13,247 +16,440 @@ import { GrView } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import "./Main.css";
 import Carousel from "react-bootstrap/Carousel";
+import { Modal, Button } from "react-bootstrap";
+import { MdOutlinePreview } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
 const Main = () => {
+  const values = [true];
+  const [fullscreen, setFullscreen] = useState(true);
+  const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
+  const [show3, setShow3] = useState(false);
+
+  function handleShow(breakpoint) {
+    setFullscreen(breakpoint);
+    setShow(true);
+  }
+  function handleShow2(breakpoint2) {
+    setFullscreen(breakpoint2);
+    setShow2(true);
+  }
+  function handleShow3(breakpoint3) {
+    setFullscreen(breakpoint3);
+    setShow3(true);
+  }
+
   const history = useHistory();
   const handleClick = () => {
     console.log("click");
     history.push("/project");
   };
 
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
   return (
     <div className="pb-5 mt-5">
       <div className="container">
         <h2 className="pb-3">Some of my work</h2>
         <div className="row row-cols-1 row-cols-md-3 g-4 dark">
           <div className="col">
-            <div
-              className="card h-100 p-3 text-justify rounded shadow img-animation"
-              style={{ background: "#172A45" }}
-            >
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={laundry01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={laundry02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={laundry03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <div className="card-body">
-                <h3>Go Wash</h3>
-                <p>
-                  A full-stack single-page web application where customers can
-                  book a service for washing their dresses by pay the fees. The
-                  website contains a separate dashboard for the admin and user
-                </p>
-                <div className="pe-4 pb-3 technology">
-                  <span>React.js</span>
-                  <span>Node.js</span>
-                  <span>Express.js</span>
-                  <span>MOngoDB</span>
-                  <span>Stripe.js</span>
-                  <span>FontAwesome</span>
-                  <span>Firebase</span>
-                  <span>Bootstrap</span>
-                </div>
+            <div className="card h-100">
+              <div className="card-img-hover">
+                <img src={cheesyKitchen1} className="card-img-top" alt="..." />
               </div>
-              <div className="card-footer ">
-                <div className="d-flex gap-3 justify-content-center">
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://github.com/sakhawat9/GoWash"
+              <div className="card-body">
+                <h3 className="card-title">Cheesy__Kitchen</h3>
+                <p className="card-text">
+                  Cheesy Kitchen is a full-stack single-page web application
+                  where users can order foods.
+                </p>
+              </div>
+              <div className="card-footer d-flex justify-content-center">
+                <>
+                  {values.map((v, idx) => (
+                    <Button
+                      key={idx}
+                      className="me-2 fw-bold link-btn"
+                      onClick={() => handleShow2(v)}
+                    >
+                      More About Cheesy__Kitchen
+                      {typeof v === "string" && `below ${v.split("-")[0]}`}
+                    </Button>
+                  ))}
+                  <Modal
+                    show={show2}
+                    fullscreen={fullscreen}
+                    onHide={() => setShow2(false)}
                   >
-                    <FiGithub
-                      style={{ fontSize: "40px" }}
-                      className="p-2 rounded-circle bg-light github-icon"
-                    />
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://laundry-service-48e19.web.app"
-                  >
-                    <GrView
-                      style={{ fontSize: "40px" }}
-                      className="p-2 rounded-circle bg-light"
-                    />
-                  </a>
-                </div>
+                    <Modal.Header closeButton>
+                      <Modal.Title>Cheesy__Kitchen</Modal.Title>
+                    </Modal.Header>
+
+                    <Modal.Body className="container">
+                      <div
+                        className="row single-project d-flex align-items-center "
+                        data-aos="flip-left"
+                        data-aos-duration="2000"
+                      >
+                        <div className="col-md-6">
+                          <Carousel>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={cheesyKitchen1}
+                                alt="First slide"
+                              />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={cheesyKitchen2}
+                                alt="second slide"
+                              />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={cheesyKitchen3}
+                                alt="Third slide"
+                              />
+                            </Carousel.Item>
+                          </Carousel>
+                          <div className="project-link pt-5  text-center">
+                            <a
+                              href="https://sungalss-shop.firebaseapp.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <button className="btn link-btn fw-bold px-3 py-2">
+                                <MdOutlinePreview /> Live
+                              </button>
+                            </a>
+                            <a
+                              href="https://github.com/monirul-fahad/sunglass-store-app-client"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <button className="btn link-btn fw-bold px-3 py-2">
+                                <FaGithub /> Github
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <h3>Cheesy__Kitchen</h3>
+                          <div>
+                            <ul>
+                              <li>
+                                Cheesy Kitchen is a full-stack single-page web
+                                application where users can order foods.
+                              </li>
+
+                              <li>
+                                There is a powerful feature like an admin
+                                dashboard where the admin can post and update
+                                food items, edit and delete items by crude
+                                operation
+                              </li>
+                              <li>
+                                Normal users will be treated as customers. They
+                                can browse the home page and can order any item
+                                from all food items added by the admin. The
+                                selected item will be added to the cart. And
+                                there use can checkout selected items.
+                              </li>
+                            </ul>
+                          </div>
+                          <h4 className="my-2 fw-bold">Technology</h4>
+                          <div className="px-3 pb-2 technology">
+                            <span>Next.js</span>
+                            <span>MongoDB</span>
+                            <span>Mongoose</span>
+                            <span>Node.js</span>
+                            <span>Typescript</span>
+                            <span>React icons</span>
+                            <span>Tailwind css</span>
+                            <span>Node sass</span>
+                            <span>React hook form</span>
+                            <span>React multi carousel</span>
+                            <span>Slick carousel</span>
+                            <span>Nodemailer</span>
+                            <span>Vercel</span>
+                            <span>Sweetalert2</span>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </>
               </div>
             </div>
           </div>
           <div className="col">
-            <div
-              className="card h-100 p-3 text-justify rounded shadow img-animation"
-              style={{ background: "#172A45" }}
-            >
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={fashion}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={fashion2}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={fashion3}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <div className="card-body">
-                <h3>Fstore</h3>
-                <p>
-                  Fstore is a professional dynamic e-commerce web application
-                  where users can choose and explore product details. Users can
-                  select items and can add them to the cart section. Finally can
-                  order them from the checkout section.
-                </p>
-                <div className="px-3 pb-2 technology">
-                  <span>React.js</span>
-                  <span>React-redux</span>
-                  <span>Typescript</span>
-                  <span>React icon</span>
-                  <span>React bootstrap</span>
-                  <span>sass</span>
-                  <span>eslint</span>
-                  <span>vercel</span>
-                </div>
+            <div className="card h-100">
+              <div className="card-img-hover">
+                <img src={academist} className="card-img-top" alt="..." />
               </div>
-              <div className="card-footer">
-                <div className="d-flex gap-3 justify-content-center">
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://github.com/sakhawat9/ecommerce_store"
+
+              <div className="card-body">
+                <h3 className="card-title">Academist</h3>
+                <p className="card-text">
+                  Academist is a learning management website like Udemy where
+                  instructors can post their course and a student can enroll in
+                  it.
+                </p>
+              </div>
+              <div className="card-footer d-flex justify-content-center">
+                <>
+                  {values.map((v, idx) => (
+                    <Button
+                      key={idx}
+                      className="me-2 fw-bold link-btn"
+                      onClick={() => handleShow(v)}
+                    >
+                      More About Academist
+                      {typeof v === "string" && `below ${v.split("-")[0]}`}
+                    </Button>
+                  ))}
+                  <Modal
+                    show={show}
+                    fullscreen={fullscreen}
+                    onHide={() => setShow(false)}
                   >
-                    <FiGithub
-                      style={{ fontSize: "40px" }}
-                      className="p-2 rounded-circle bg-light github-icon"
-                    />
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://ecommercestore-alpha.vercel.app"
-                  >
-                    <GrView
-                      style={{ fontSize: "40px" }}
-                      className="p-2 rounded-circle bg-light"
-                    />
-                  </a>
-                </div>
+                    <Modal.Header closeButton>
+                      <Modal.Title>Academist</Modal.Title>
+                    </Modal.Header>
+
+                    <Modal.Body className="container">
+                      <div
+                        className="row single-project d-flex align-items-center"
+                        data-aos="flip-left"
+                        data-aos-duration="2000"
+                      >
+                        <div className="col-md-6">
+                          <Carousel>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={academist}
+                                alt="First slide"
+                              />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={academist2}
+                                alt="second slide"
+                              />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={academist3}
+                                alt="Third slide"
+                              />
+                            </Carousel.Item>
+                          </Carousel>
+                          <div className="project-link pt-5  text-center">
+                            <a
+                              href="https://academist.vercel.app/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <button className="btn link-btn fw-bold px-3 py-2">
+                                <MdOutlinePreview /> Live
+                              </button>
+                            </a>
+                            <a
+                              href="https://github.com/sakhawat9/Academist"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <button className="btn link-btn fw-bold px-3 py-2">
+                                <FaGithub /> Github
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <h3>Academist</h3>
+                          <div>
+                            <ul>
+                              <li>
+                                Academist is a learning management website like
+                                Udemy where instructors can post their course
+                                and a student can enroll in it.
+                              </li>
+                              <li>
+                                There are three different dashboard layouts for
+                                three different types of users like Student,
+                                Instructor, Admin.
+                              </li>
+                              <li>
+                                It is a fully functional website where all the
+                                functionality like payment gateway, course
+                                update, delete, etc work dynamically.
+                              </li>
+                            </ul>
+                          </div>
+                          <h4 className="my-2 fw-bold">Technology</h4>
+                          <div className="px-3 pb-2 technology">
+                            <span>Next.js</span>
+                            <span>Typescript</span>
+                            <span>Axios</span>
+                            <span>MOngoDB</span>
+                            <span>Mongoose</span>
+                            <span>React-testify</span>
+                            <span>Js-cookie</span>
+                            <span>Tailwind CSS</span>
+                            <span>Node-sass</span>
+                            <span>Cloudinary</span>
+                            <span>Sweetalert2</span>
+                            <span>React Toastify</span>
+                            <span>React-icons</span>
+                            <span>Vercel</span>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </>
               </div>
             </div>
           </div>
           <div className="col">
-            <div
-              className="card h-100 p-3 text-justify rounded shadow img-animation"
-              style={{ background: "#172A45" }}
-            >
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={chart_app01}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={chart_app02}
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{ height: "180px" }}
-                    className="d-block w-100"
-                    src={chart_app03}
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <div className="card-body">
-                <h3>Chart App</h3>
-                <p>
-                  This is a Communicating website where a person can contact
-                  him/her friend & customer community. If a person wants to use
-                  this website, he/she must first sign in to the Google
-                  Authentication process. They can create Room and contact
-                  easily.
-                </p>
-                <div className="px-3 pb-2 technology">
-                  <span>React Redux</span>
-                  <span>Redux Toolkit</span>
-                  <span>Style Component</span>
-                  <span>Material-ui</span>
-                  <span>Firebase</span>
-                  <span>React Firebase Hook</span>
-                </div>
+            <div className="card h-100">
+              <div className="card-img-hover">
+                <img src={chart_app01} className="card-img-top" alt="..." />
               </div>
-              <div className="card-footer">
-                <div className="d-flex gap-3 justify-content-center">
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://github.com/sakhawat9/chat-app"
+              <div className="card-body">
+                <h5 className="card-title">We care</h5>
+                <p className="card-text">
+                  We Care is a single-page web application where users can book
+                  appointments for doctors.
+                </p>
+              </div>
+              <div className="card-footer d-flex justify-content-center">
+                <>
+                  {values.map((v, idx) => (
+                    <Button
+                      key={idx}
+                      className="me-2 fw-bold link-btn"
+                      // style={{
+                      //   background: "#ff4a57",
+                      //   border: "none",
+                      //   color: "#1f2235",
+                      // }}
+                      onClick={() => handleShow3(v)}
+                    >
+                      More About We Care
+                      {typeof v === "string" && `below ${v.split("-")[0]}`}
+                    </Button>
+                  ))}
+                  <Modal
+                    show={show3}
+                    fullscreen={fullscreen}
+                    onHide={() => setShow3(false)}
                   >
-                    <FiGithub
-                      style={{ fontSize: "40px" }}
-                      className="p-2 rounded-circle bg-light github-icon"
-                    />
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://chat-app-team-78.web.app"
-                  >
-                    <GrView
-                      style={{ fontSize: "40px" }}
-                      className="p-2 rounded-circle bg-light"
-                    />
-                  </a>
-                </div>
+                    <Modal.Header closeButton>
+                      <Modal.Title>We Care</Modal.Title>
+                    </Modal.Header>
+
+                    <Modal.Body className="container">
+                      <div
+                        className="row single-project d-flex align-items-center"
+                        data-aos="flip-left"
+                        data-aos-duration="2000"
+                      >
+                        <div className="col-md-6">
+                          <Carousel>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={chart_app01}
+                                alt="First slide"
+                              />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={chart_app02}
+                                alt="second slide"
+                              />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={chart_app03}
+                                alt="Third slide"
+                              />
+                            </Carousel.Item>
+                          </Carousel>
+                          <div className="project-link pt-5  text-center">
+                            <a
+                              href="https://chat-app-team-78.web.app"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <button
+                                style={{
+                                  background: "#ff4a57",
+                                  border: "none",
+                                  color: "#1f2235",
+                                }}
+                                className="btn link-btn fw-bold px-3 py-2"
+                              >
+                                <MdOutlinePreview /> Live
+                              </button>
+                            </a>
+                            <a
+                              href="https://github.com/sakhawat9/chat-app"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <button
+                                style={{
+                                  background: "#ff4a57",
+                                  border: "none",
+                                  color: "#1f2235",
+                                }}
+                                className="btn link-btn fw-bold px-3 py-2"
+                              >
+                                <FaGithub /> Github
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <h2>We Care</h2>
+                          <div>
+                            We Care is a single-page web application where users
+                            can book appointments for doctors.
+                            <ul>
+                              <li>User have to create account first.</li>
+                              <li>User can simply login with google.</li>
+                              <li>
+                                Users can check doctor's details and confirm the
+                                appointment.
+                              </li>
+                            </ul>
+                          </div>
+                          <h4 className="my-2 fw-bold">Technology</h4>
+                          <div className="px-3 pb-2 technology">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap</span>
+                            <span>React Bootstrap</span>
+                            <span>JavaScript</span>
+                            <span>React.js</span>
+                            <span>React Router</span>
+                            <span>React Icon</span>
+                            <span>Firebase</span>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </>
               </div>
             </div>
           </div>
