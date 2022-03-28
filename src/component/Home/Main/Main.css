@@ -50,9 +50,9 @@
 }
 
 .link-btn {
-  background-color: blue;
+  background-color: #2053c9;
   border: none;
-  color: #fff;
+  color: #fff !important;
 }
 
 .card-img-hover {
@@ -94,6 +94,6 @@
   height: auto !important;
 }
 
-.details-title {
-  color: #000 !important;
+.details {
+  text-align: justify;
 }

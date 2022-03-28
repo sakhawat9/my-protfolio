@@ -9,7 +9,8 @@ import watchShop from "../../../images/watchShop.png";
 import watchShop2 from "../../../images/watchShop2.png";
 import watchShop3 from "../../../images/watchShop3.png";
 import { useHistory } from "react-router";
-import { GrView } from "react-icons/gr";
+import { GrView, GrFormView } from "react-icons/gr";
+import { AiOutlineFolderView } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import "./Main.css";
 import Carousel from "react-bootstrap/Carousel";
@@ -118,7 +119,7 @@ const Main = () => {
                               rel="noopener noreferrer"
                             >
                               <button className="btn link-btn fw-bold px-3 py-2">
-                                <MdOutlinePreview /> Live
+                                <AiOutlineFolderView /> Live
                               </button>
                             </a>
                             <a
@@ -134,27 +135,23 @@ const Main = () => {
                         </div>
                         <div className="col-md-6">
                           <h3>Cheesy__Kitchen</h3>
-                          <div>
-                            <ul>
-                              <li>
-                                Cheesy Kitchen is a full-stack single-page web
-                                application where users can order foods.
-                              </li>
-
-                              <li>
-                                There is a powerful feature like an admin
-                                dashboard where the admin can post and update
-                                food items, edit and delete items by crude
-                                operation
-                              </li>
-                              <li>
-                                Normal users will be treated as customers. They
-                                can browse the home page and can order any item
-                                from all food items added by the admin. The
-                                selected item will be added to the cart. And
-                                there use can checkout selected items.
-                              </li>
-                            </ul>
+                          <div className="fs-6 details">
+                            <p>
+                              Cheesy Kitchen is a full-stack single-page web
+                              application where users can order foods.
+                            </p>
+                            <p>
+                              There is a powerful feature like an admin
+                              dashboard where the admin can post and update food
+                              items, edit and delete items by crude operation.
+                            </p>
+                            <p>
+                              Normal users will be treated as customers. They
+                              can browse the home page and can order any item
+                              from all food items added by the admin. The
+                              selected item will be added to the cart. And there
+                              use can checkout selected items.
+                            </p>
                           </div>
                           <h4 className="my-2 fw-bold">Technology</h4>
                           <div className="px-3 pb-2 technology">
@@ -253,7 +250,7 @@ const Main = () => {
                               rel="noopener noreferrer"
                             >
                               <button className="btn link-btn fw-bold px-3 py-2">
-                                <MdOutlinePreview /> Live
+                                <AiOutlineFolderView /> Live
                               </button>
                             </a>
                             <a
@@ -269,24 +266,22 @@ const Main = () => {
                         </div>
                         <div className="col-md-6">
                           <h3>Academist</h3>
-                          <div>
-                            <ul>
-                              <li>
-                                Academist is a learning management website like
-                                Udemy where instructors can post their course
-                                and a student can enroll in it.
-                              </li>
-                              <li>
-                                There are three different dashboard layouts for
-                                three different types of users like Student,
-                                Instructor, Admin.
-                              </li>
-                              <li>
-                                It is a fully functional website where all the
-                                functionality like payment gateway, course
-                                update, delete, etc work dynamically.
-                              </li>
-                            </ul>
+                          <div className="fs-6 details">
+                            <p>
+                              Academist is a learning management website like
+                              Udemy where instructors can post their course and
+                              a student can enroll in it.
+                            </p>
+                            <p>
+                              There are three different dashboard layouts for
+                              three different types of users like Student,
+                              Instructor, Admin.
+                            </p>
+                            <p>
+                              It is a fully functional website where all the
+                              functionality like payment gateway, course update,
+                              delete, etc work dynamically.
+                            </p>
                           </div>
                           <h4 className="my-2 fw-bold">Technology</h4>
                           <div className="px-3 pb-2 technology">
@@ -344,7 +339,7 @@ const Main = () => {
                     onHide={() => setShow3(false)}
                   >
                     <Modal.Header closeButton>
-                      <Modal.Title className="details-title">WATCH_SHOP</Modal.Title>
+                      <Modal.Title>WATCH_SHOP</Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body className="container">
@@ -383,15 +378,8 @@ const Main = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <button
-                                style={{
-                                  background: "#ff4a57",
-                                  border: "none",
-                                  color: "#1f2235",
-                                }}
-                                className="btn link-btn fw-bold px-3 py-2"
-                              >
-                                <MdOutlinePreview /> Live
+                              <button className="btn link-btn fw-bold px-3 py-2">
+                                <AiOutlineFolderView /> Live
                               </button>
                             </a>
                             <a
@@ -399,14 +387,7 @@ const Main = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <button
-                                style={{
-                                  background: "#ff4a57",
-                                  border: "none",
-                                  color: "#1f2235",
-                                }}
-                                className="btn link-btn fw-bold px-3 py-2"
-                              >
+                              <button className="btn link-btn fw-bold px-3 py-2">
                                 <FaGithub /> Github
                               </button>
                             </a>
@@ -414,24 +395,22 @@ const Main = () => {
                         </div>
                         <div className="col-md-6">
                           <h2>WATCH_SHOP</h2>
-                          <div>
-                            <ul>
-                              <li>
-                                Watch_Shop is an e-commerce website where users
-                                can see watches on the basis of category, can
-                                add watches to cart and watchlist.
-                              </li>
-                              <li>
-                                A user can manage his profile and can update all
-                                details of him. As well as can order products by
-                                giving shipping address and payment info.
-                              </li>
-                              <li>
-                                Admin can add new products, manage orders,
-                                manage users, and also has the authority of CRUD
-                                operation.
-                              </li>
-                            </ul>
+                          <div className="fs-6 details">
+                            <p>
+                              Watch_Shop is an e-commerce website where users
+                              can see watches on the basis of category, can add
+                              watches to cart and watchlist.
+                            </p>
+                            <p>
+                              A user can manage his profile and can update all
+                              details of him. As well as can order products by
+                              giving shipping address and payment info.
+                            </p>
+                            <p>
+                              Admin can add new products, manage orders, manage
+                              users, and also has the authority of CRUD
+                              operation.
+                            </p>
                           </div>
                           <h4 className="my-2 fw-bold">Technology</h4>
                           <div className="px-3 pb-2 technology">
