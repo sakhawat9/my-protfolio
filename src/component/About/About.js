@@ -35,7 +35,9 @@ const About = () => {
               <span>Next.js</span>
               <span>Node.js</span>
               <span>Express.js</span>
-              <span>MOngoDB</span>
+              <span>MongoDB</span>
+              <span>Mongoose</span>
+              <span>Typescript</span>
               <span>React Router</span>
               <span>HTML</span>
               <span>CSS</span>
