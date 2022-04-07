@@ -114,7 +114,7 @@ const Main = () => {
                           </Carousel>
                           <div className="project-link pt-5  text-center">
                             <a
-                              href="https://sungalss-shop.firebaseapp.com/"
+                              href="https://watch-shop-ruddy.vercel.app/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -123,7 +123,7 @@ const Main = () => {
                               </button>
                             </a>
                             <a
-                              href="https://github.com/monirul-fahad/sunglass-store-app-client"
+                              href="https://github.com/sakhawat9/cheesy__kitchen"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
