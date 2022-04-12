@@ -9,13 +9,10 @@ import watchShop from "../../../images/watchShop.png";
 import watchShop2 from "../../../images/watchShop2.png";
 import watchShop3 from "../../../images/watchShop3.png";
 import { useHistory } from "react-router";
-import { GrView, GrFormView } from "react-icons/gr";
 import { AiOutlineFolderView } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi";
 import "./Main.css";
 import Carousel from "react-bootstrap/Carousel";
 import { Modal, Button } from "react-bootstrap";
-import { MdOutlinePreview } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 
 const Main = () => {
@@ -114,7 +111,7 @@ const Main = () => {
                           </Carousel>
                           <div className="project-link pt-5  text-center">
                             <a
-                              href="https://watch-shop-ruddy.vercel.app/"
+                              href="https://cheesykitchen.vercel.app/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
